@@ -1,0 +1,1203 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tentang CV. Gunung Mas 138 — profil perusahaan, cabang, dan tim." />
+  <title>Tentang Kami — CV. Gunung Mas 138</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/mobile-patch.css" />
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" />
+  <link rel="stylesheet" href="css/tentang.css" />
+
+  <style>
+  .navbar { opacity: 1; }
+</style>
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__brand">
+        <img src="assets/img/logo.jpeg" alt="Logo CV. Gunung Mas 138" class="navbar__logo" />
+        <span class="navbar__brand-text">CV. GUNUNG MAS <span>138</span></span>
+      </a>
+
+      <!-- TODO: revert ke shop.html atau path production sebelum deploy -->
+<nav class="navbar__links">
+  <a href="index.html" class="navbar__link">Beranda</a>
+  <a href="tentang.html" class="navbar__link navbar__link--active">Tentang Kami</a>
+  <a href="produk.html" class="navbar__link">Produk</a>
+  <a href="#" class="navbar__link navbar__link--soon" title="Segera hadir">Belanja</a>
+  <a href="karir.html" class="navbar__link">Karir</a>
+  <a href="kontak.html" class="navbar__link ">Kontak</a>
+</nav>
+
+      <a href="kontak.html" class="btn btn-primary navbar__cta">
+        Hubungi Kami
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.3 2.6 3.4 4.7 6 6l2-2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.9c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.2 1l-2 2.3z" fill="currentColor"/></svg>
+      </a>
+
+      <button class="navbar__burger" id="navBurger" aria-label="Buka menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="navbar__mobile-panel" id="navMobilePanel">
+      <a href="index.html" class="navbar__mobile-link">Beranda</a>
+      <a href="tentang.html" class="navbar__mobile-link navbar__mobile-link--active">Tentang Kami</a>
+      <a href="produk.html" class="navbar__mobile-link">Produk</a>
+      <a href="#" class="navbar__mobile-link navbar__mobile-link--soon" title="Segera hadir">Belanja</a>
+      <a href="karir.html" class="navbar__mobile-link">Karir</a>
+      <a href="kontak.html" class="navbar__mobile-link">Kontak</a>
+      <a href="kontak.html" class="btn btn-primary navbar__mobile-cta">
+        Hubungi Kami
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.3 2.6 3.4 4.7 6 6l2-2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.9c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.2 1l-2 2.3z" fill="currentColor"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+      
+       ========================================================================== -->
+
+  <!-- 1. HERO SECTION -->
+  <section class="about__hero" id="aboutHero" data-reveal-scroll>
+    <img src="assets/img/about/hero1.jpeg" alt="Gudang dan Truk Distribusi CV. Gunung Mas 138" class="about__hero-bg">
+    <div class="about__hero-overlay"></div>
+    <div class="about__hero-content">
+       <div class="about__hero-breadcrumb">Beranda / Tentang Kami</div>
+      <h1 class="about__hero-title">CV GUNUNG MAS 138</h1>
+    </div>
+  </section>
+
+
+   <!-- 3. SECTION GELAP — KEUNGGULAN -->
+ <section class="about__section about__competence" id="aboutCompetence">
+    <div class="about__container">
+      <div class="about__competence-grid">
+        <div class="about__competence-image-col">
+          <div class="about__competence-image-wrap">
+            <img src="assets/img/about/owner2.jpeg" alt="Gudang dan Logistik CV. Gunung Mas 138" class="about__competence-img">
+          </div>
+        </div>
+
+        <div class="about__competence-content-col">
+ 
+  
+
+ <blockquote class="about__quote">
+    <svg class="about__quote-icon" width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M9.5 8C6.5 8 4 10.5 4 13.5S6.5 19 9.5 19c1 0 2-.3 2.8-.9-.5 2.4-2.5 4.4-4.8 4.9v2c4-.6 7-4 7-8.5 0-4.7-2.2-8.5-5-8.5zm10 0c-3 0-5.5 2.5-5.5 5.5s2.5 5.5 5.5 5.5c1 0 2-.3 2.8-.9-.5 2.4-2.5 4.4-4.8 4.9v2c4-.6 7-4 7-8.5 0-4.7-2.2-8.5-5-8.5z"/></svg>
+    <p id="ownerQuoteText">Bisnis bukan sekadar tentang menjadi yang terbesar, tetapi tentang bagaimana terus bertumbuh dan berkelanjutan melalui inovasi, digitalisasi, serta perbaikan tanpa henti.</p>
+    <footer>
+      <strong>DANI F MARTHENIA</strong>
+      <span>Founder & Direktur CV. Gunung Mas 138</span>
+    </footer>
+  </blockquote>
+
+ <!-- <div class="about__checklist">
+    <div class="about__checklist-item">
+      <div class="about__checklist-icon">✓</div>
+      <span>Pengiriman Tepat Waktu</span>
+    </div>
+    <div class="about__checklist-item">
+      <div class="about__checklist-icon">✓</div>
+      <span>Armada Terpercaya</span>
+    </div>
+    <div class="about__checklist-item">
+      <div class="about__checklist-icon">✓</div>
+      <span>Harga Kompetitif</span>
+    </div>
+    <div class="about__checklist-item">
+      <div class="about__checklist-icon">✓</div>
+      <span>Layanan Responsif</span>
+    </div>
+  </div>  -->
+
+  <a href="kontak.html" class="about__btn">
+    Hubungi Kami
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="5" y1="12" x2="19" y2="12"></line>
+      <polyline points="12 5 19 12 12 19"></polyline>
+    </svg>
+  </a>
+</div>
+      </div>
+    </div>
+  </section>
+
+ <!-- VISI & MISI -->
+<section class="about__section about__vm about__vm--corporate" id="aboutVisiMisi">
+  <div class="about__vm-bg" aria-hidden="true">
+    <img src="assets/img/visi-misi/vm-bg-mountain.jpg" alt="" />
+  </div>
+
+  <div class="about__vm-dots about__vm-dots--tl" aria-hidden="true"></div>
+  <div class="about__vm-dots about__vm-dots--br" aria-hidden="true"></div>
+
+  <div class="about__container">
+    
+
+    <!-- VISI -->
+    <div class="vm-stage-wrap vm-stage-wrap--visi">
+      <div class="vm-stage vm-stage--visi">
+        <div class="visi-single">
+          <div class="visi-single-logo">
+            <img src="assets/img/visi-misi/hex-visi.png"
+                 alt="Visi CV. Gunung Mas 138"
+                 class="vm-core-img" />
+          </div>
+
+          <div class="vm-connector vm-connector--visi" aria-hidden="true">
+            <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+              <path class="vm-connector-path" d="M50 0 C50 32, 50 68, 50 100"></path>
+            </svg>
+            <span class="vm-connector-dot vm-connector-dot--start"></span>
+            <span class="vm-connector-dot vm-connector-dot--end"></span>
+          </div>
+
+          <div class="visi-single-content">
+            <div class="visi-single-accent" aria-hidden="true"></div>
+            <p class="visi-single-text" id="visiTypingText" aria-label="Visi CV. Gunung Mas 138">
+              Menjadi perusahaan distribusi terdepan dan terpercaya di Priangan Timur, dengan fondasi bisnis dan keuangan yang kokoh, sebagai mitra pilihan produsen dan pelanggan yang bertumbuh secara berkelanjutan serta menjadi berkat bagi banyak orang.
+            </p>
+            <span class="visi-typing-cursor" id="visiTypingCursor" aria-hidden="true"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PEMISAH VISI → MISI -->
+    <div class="vm-transition" aria-hidden="true">
+      <span class="vm-transition-line"></span>
+      <span class="vm-transition-label">KOMITMEN KAMI</span>
+      <span class="vm-transition-line"></span>
+    </div>
+
+    <!-- MISI -->
+    <!-- Khusus HP -- foto statis, gantiin radial interaktif yang berat.
+         Ditaruh DI LUAR .vm-stage-wrap--misi -- wrapper itu di-hide
+         total di HP (.vm-stage-wrap:not(.vm-stage-wrap--visi)), jadi
+         kalau foto ditaruh di dalamnya bakal ikut ke-hide juga. -->
+    <img
+      src="assets/img/values/misi-mobile.jpeg"
+      alt="Misi CV. Gunung Mas 138"
+      class="vm-mobile-photo vm-mobile-photo--misi"
+    />
+    <div class="vm-stage-wrap vm-stage-wrap--misi">
+      
+
+      <div class="vm-stage vm-stage--misi">
+        <div class="vm-col">
+          <div class="about__vm-card about__vm-card--1">            <div class="about__vm-card-icon about__vm-card-icon--img">
+              <img src="assets/img/visi-misi/icon-distribusi.png" alt="Layanan Distribusi" />
+            </div>
+            <div class="about__vm-card-body">
+              <h4>Menghadirkan Layanan Distribusi yang Andal.</h4>
+              <p>Menyediakan layanan distribusi yang tepat, efisien, dan responsif melalui inovasi, pemanfaatan teknologi, serta perbaikan berkelanjutan untuk mendukung kelancaran usaha pelanggan.</p>
+            </div>
+          </div>
+
+          <div class="about__vm-card about__vm-card--3">            <div class="about__vm-card-icon about__vm-card-icon--img">
+              <img src="assets/img/visi-misi/icon-kemitraan.png" alt="Kemitraan" />
+            </div>
+            <div class="about__vm-card-body">
+              <h4>Membangun Kemitraan yang Bertumbuh Bersama.</h4>
+              <p>Menjalin hubungan jangka panjang yang saling menguntungkan dengan produsen dan pelanggan serta memperluas jaringan distribusi di Priangan Timur.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="vm-core" aria-hidden="true">
+          <span class="vm-core-line vm-core-line--left"></span>
+          <span class="vm-core-line vm-core-line--right"></span>
+
+          <svg class="vm-misi-connector vm-misi-connector--left-top" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path class="vm-connector-path" d="M0 50 C30 50, 56 12, 100 15"></path>
+          </svg>
+          <svg class="vm-misi-connector vm-misi-connector--left-bottom" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path class="vm-connector-path" d="M0 50 C30 50, 56 88, 100 85"></path>
+          </svg>
+          <svg class="vm-misi-connector vm-misi-connector--right-top" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path class="vm-connector-path" d="M100 50 C70 50, 44 12, 0 15"></path>
+          </svg>
+          <svg class="vm-misi-connector vm-misi-connector--right-bottom" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path class="vm-connector-path" d="M100 50 C70 50, 44 88, 0 85"></path>
+          </svg>
+
+          <span class="vm-misi-pulse vm-misi-pulse--lt"></span>
+          <span class="vm-misi-pulse vm-misi-pulse--lb"></span>
+          <span class="vm-misi-pulse vm-misi-pulse--rt"></span>
+          <span class="vm-misi-pulse vm-misi-pulse--rb"></span>
+
+          <img src="assets/img/visi-misi/hex-misi.png"
+               alt=""
+               class="vm-core-img" />
+        </div>
+
+        <div class="vm-col">
+          <div class="about__vm-card about__vm-card--2">            <div class="about__vm-card-icon about__vm-card-icon--img">
+              <img src="assets/img/visi-misi/icon-sdm.png" alt="Fondasi Perusahaan" />
+            </div>
+            <div class="about__vm-card-body">
+              <h4>Memperkuat Fondasi Perusahaan.</h4>
+              <p>Mengembangkan SDM yang kompeten dan berintegritas, menerapkan tata kelola yang baik, serta mengelola keuangan secara disiplin untuk membangun bisnis yang sehat dan tangguh.</p>
+            </div>
+          </div>
+
+          <div class="about__vm-card about__vm-card--4">            <div class="about__vm-card-icon about__vm-card-icon--img">
+              <img src="assets/img/visi-misi/icon-berkelanjutan.png" alt="Manfaat dan Berkat" />
+            </div>
+            <div class="about__vm-card-body">
+              <h4>Memberikan Manfaat dan Menjadi Berkat.</h4>
+              <p>Menjalankan bisnis secara bertanggung jawab dengan mendukung kesejahteraan karyawan, memberikan manfaat bagi masyarakat, serta menjaga lingkungan.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- NILAI & BUDAYA KAMI -->
+<section class="vc-budaya" id="vcBudaya">
+
+  <!-- Khusus HP -- foto statis, gantiin wheel interaktif yang berat -->
+  <img
+    src="assets/img/values/budaya-mobile.jpeg"
+    alt="Budaya Kerja CV. Gunung Mas 138"
+    class="vc-mobile-photo"
+  />
+
+  <div class="vc-sticky">
+    <div class="vc-orbit"></div>
+
+    <header class="vc-header" id="vcBudayaHeader">
+      <div class="vc-eyebrow">Nilai &amp; Budaya Kami</div>
+      <h1>Yang Kami <span>Pegang Teguh</span></h1>
+      <p>
+        Nilai dan budaya ini menjadi fondasi dalam setiap langkah kami,
+        membentuk cara kami bekerja dan melayani Anda dengan sepenuh hati.
+      </p>
+    </header>
+
+    <main class="vc-stage">
+
+      <div class="vc-wheel">
+        <svg viewBox="0 0 400 400" aria-hidden="true">
+          <circle class="vc-ring-track" cx="200" cy="200" r="142"/>
+
+          <circle class="vc-ring-segment vc-s1" data-segment="1" cx="200" cy="200" r="142"
+            pathLength="100" stroke-dasharray="11.4 88.6" stroke-dashoffset="-0.7"/>
+          <circle class="vc-ring-segment vc-s2" data-segment="2" cx="200" cy="200" r="142"
+            pathLength="100" stroke-dasharray="11.4 88.6" stroke-dashoffset="-13.2"/>
+          <circle class="vc-ring-segment vc-s3" data-segment="3" cx="200" cy="200" r="142"
+            pathLength="100" stroke-dasharray="11.4 88.6" stroke-dashoffset="-25.7"/>
+          <circle class="vc-ring-segment vc-s4" data-segment="4" cx="200" cy="200" r="142"
+            pathLength="100" stroke-dasharray="11.4 88.6" stroke-dashoffset="-38.2"/>
+          <circle class="vc-ring-segment vc-s5" data-segment="5" cx="200" cy="200" r="142"
+            pathLength="100" stroke-dasharray="11.4 88.6" stroke-dashoffset="-50.7"/>
+          <circle class="vc-ring-segment vc-s6" data-segment="6" cx="200" cy="200" r="142"
+            pathLength="100" stroke-dasharray="11.4 88.6" stroke-dashoffset="-63.2"/>
+          <circle class="vc-ring-segment vc-s7" data-segment="7" cx="200" cy="200" r="142"
+            pathLength="100" stroke-dasharray="11.4 88.6" stroke-dashoffset="-75.7"/>
+          <circle class="vc-ring-segment vc-s8" data-segment="8" cx="200" cy="200" r="142"
+            pathLength="100" stroke-dasharray="11.4 88.6" stroke-dashoffset="-88.2"/>
+        </svg>
+
+        <div class="vc-wheel-center">
+          <div>
+            <small>BUDAYA KERJA</small>
+            <strong>CV. GUNUNG MAS 138</strong>
+          </div>
+        </div>
+
+        <div class="vc-number vc-n1">01</div>
+        <div class="vc-number vc-n2">02</div>
+        <div class="vc-number vc-n3">03</div>
+        <div class="vc-number vc-n4">04</div>
+        <div class="vc-number vc-n5">05</div>
+        <div class="vc-number vc-n6">06</div>
+        <div class="vc-number vc-n7">07</div>
+        <div class="vc-number vc-n8">08</div>
+      </div>
+
+      <article class="vc-card vc-r vc-c1">
+        <div class="vc-icon vc-i-cyan"><img src="assets/img/values/integritas.png" alt="Integritas" /></div><div>
+          <h2>INTEGRITAS</h2><p>Jujur dalam bekerja dan bertanggung jawab.</p>
+        </div>
+      </article>
+      <article class="vc-card vc-r vc-c2">
+        <div class="vc-icon vc-i-navy"><img src="assets/img/values/fun.png" alt="Fun" /></div><div>
+          <h2>FUN</h2><p>Ceria dalam bekerja dan menciptakan suasana positif.</p>
+        </div>
+      </article>
+      <article class="vc-card vc-r vc-c3">
+        <div class="vc-icon vc-i-red"><img src="assets/img/values/kaizen.png" alt="Kaizen" /></div><div>
+          <h2>KAIZEN</h2><p>Selalu memperbaiki diri menjadi lebih baik.</p>
+        </div>
+      </article>
+      <article class="vc-card vc-r vc-c4">
+        <div class="vc-icon vc-i-yellow"><img src="assets/img/values/totalitas.png" alt="Totalitas" /></div><div>
+          <h2>TOTALITAS</h2><p>Menyelesaikan tugas sampai selesai.</p>
+        </div>
+      </article>
+
+      <article class="vc-card vc-l vc-c5">
+        <div class="vc-icon vc-i-cyan"><img src="assets/img/values/respect.png" alt="Respect" /></div><div>
+          <h2>RESPECT</h2><p>Menghormati orang lain dalam setiap tindakan.</p>
+        </div>
+      </article>
+      <article class="vc-card vc-l vc-c6">
+        <div class="vc-icon vc-i-navy"><img src="assets/img/values/tangguh.png" alt="Tangguh" /></div><div>
+          <h2>TANGGUH</h2><p>Pantang menyerah dan bermental juara.</p>
+        </div>
+      </article>
+      <article class="vc-card vc-l vc-c7">
+        <div class="vc-icon vc-i-red"><img src="assets/img/values/optimis.png" alt="Optimis" /></div><div>
+          <h2>OPTIMIS</h2><p>Berpikir positif menghadapi tantangan.</p>
+        </div>
+      </article>
+      <article class="vc-card vc-l vc-c8">
+        <div class="vc-icon vc-i-yellow"><img src="assets/img/values/intrapreneur.png" alt="Intrapreneur" /></div><div>
+          <h2>INTRAPRENEUR</h2><p>Menumbuhkan jiwa wirausaha dan inovasi.</p>
+        </div>
+      </article>
+    </main>
+
+    <aside class="vc-progress">
+      <div class="vc-progress-line"><div class="vc-progress-fill" id="vcP1"></div></div>
+      <div class="vc-progress-label" id="vcPl1">INTRO</div>
+    </aside>
+
+    <div class="vc-scroll-hint" id="vcHint1">
+      <div class="vc-mouse"></div>
+      <span>Scroll untuk melihat</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- =======================================================
+     SECTION 2 — VALUES
+     Starts immediately after section 1.
+     ======================================================= -->
+<section class="vc-values" id="vcValues">
+
+  <!-- Khusus HP -- foto statis, gantiin wheel interaktif yang berat -->
+  <img
+    src="assets/img/values/values-mobile.jpeg"
+    alt="Kenapa Memilih Kami — CV. Gunung Mas 138"
+    class="vc-mobile-photo"
+  />
+
+  <div class="vc-sticky">
+
+    <header class="vc-values-head">
+      <div class="vc-values-logo"><img src="assets/img/logo.jpeg" alt="Logo CV. Gunung Mas 138" /></div>
+      <h2>CV. Gunung Mas 138</h2>
+      <p>Nilai yang menjadi komitmen kami dalam memberikan pelayanan terbaik.</p>
+    </header>
+
+    <main class="vc-values-stage">
+
+      <div class="vc-rail vc-left"></div>
+      <div class="vc-rail vc-right"></div>
+
+      <!-- CENTER -->
+      <div class="vc-values-core">
+        <div class="vc-core-ring"></div>
+        <div class="vc-core-content">
+          <div>
+            <div class="vc-diamond"></div>
+            <span>Values</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- LEFT 01-04 -->
+      <article class="vc-value-item vc-right vc-v1" data-value="1">
+        <div class="vc-item-number">01</div>
+        <div class="text">Kiriman Cepat<br>dan Tepat</div>
+        <div class="bubble">🚚</div>
+      </article>
+
+      <article class="vc-value-item vc-right vc-v2" data-value="2">
+        <div class="vc-item-number">02</div>
+        <div class="text">Fast Respons</div>
+        <div class="bubble">⏱</div>
+      </article>
+
+      <article class="vc-value-item vc-right vc-v3" data-value="3">
+        <div class="vc-item-number">03</div>
+        <div class="text">Tidak Meminta<br>Uang Bongkar</div>
+        <div class="bubble"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 11V6a2 2 0 00-2-2 2 2 0 00-2 2"/><path d="M14 10V4a2 2 0 00-2-2 2 2 0 00-2 2v2"/><path d="M10 10.5V6a2 2 0 00-2-2 2 2 0 00-2 2v8"/><path d="M18 8a2 2 0 114 0v6a8 8 0 01-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 012.83-2.82L7 15"/></svg></div>
+      </article>
+
+      <article class="vc-value-item vc-right vc-v4" data-value="4">
+        <div class="vc-item-number">04</div>
+        <div class="text">Produk Kumplit</div>
+        <div class="bubble">📦</div>
+      </article>
+
+      <!-- RIGHT 05-08 -->
+      <article class="vc-value-item vc-left vc-v5" data-value="5">
+        <div class="bubble">🏅</div>
+        <div class="text">Kualitas Produk<br>Sangat Baik</div>
+        <div class="vc-item-number">05</div>
+      </article>
+
+      <article class="vc-value-item vc-left vc-v6" data-value="6">
+        <div class="bubble"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div>
+        <div class="text">Relationship<br>Baik</div>
+        <div class="vc-item-number">06</div>
+      </article>
+
+      <article class="vc-value-item vc-left vc-v7" data-value="7">
+        <div class="bubble">💵</div>
+        <div class="text">Harga Kompetitif</div>
+        <div class="vc-item-number">07</div>
+      </article>
+
+      <article class="vc-value-item vc-left vc-v8" data-value="8">
+        <div class="bubble">🚛</div>
+        <div class="text">Layanan Kiriman<br>Memuaskan</div>
+        <div class="vc-item-number">08</div>
+      </article>
+
+    </main>
+
+    <aside class="vc-values-progress">
+      <div class="vc-bar"><i id="vcP2"></i></div>
+      <span id="vcPl2">INTRO</span>
+    </aside>
+
+    <div class="vc-values-scroll-hint" id="vcHint2">
+      Scroll untuk melihat values
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============ MEDIA SOSIAL ============ -->
+<section class="social-section" id="socmed" data-reveal-scroll>
+  <div class="social-bgpattern" aria-hidden="true"></div>
+
+  <div class="social-header">
+    <div class="social-header__text">
+      <span class="eyebrow">◆ Platform Digital</span>
+      <h2>Media Digital <span class="text-accent">Kami</span></h2>
+      <div class="social-header__underline"></div>
+      <p>
+        Sebagai <strong>Perusahaan Distribusi</strong> yang selalu berkembang, kami percaya
+        bahwa hubungan baik dengan <strong>Pelanggan dan Masyarakat</strong> dimulai dari
+        komunikasi yang terbuka dan kemudahan akses informasi.
+      </p>
+      <p>
+        Melalui <strong>Platform Digital</strong>, kami ingin lebih dekat dengan Anda —
+        berbagi informasi, inspirasi, dan berbagai aktivitas terbaru dari kami.
+      </p>
+    </div>
+    <div class="social-header__media">
+      <img src="assets/img/social-cards/media-digital-phone.jpg" alt="Media sosial CV. Gunung Mas 138" />
+    </div>
+  </div>
+
+  <div class="social-grid">
+    <!-- TODO: ganti link & handle placeholder di bawah dengan akun asli -->
+    <a href="https://www.instagram.com/cvgunungmas138/" target="_blank" rel="noopener" class="social-card social-card--ig">
+      <span class="social-card__bar"></span>
+      <span class="social-card__icon">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+        </svg>
+      </span>
+      <div class="social-card__body">
+        <h3>Instagram</h3>
+        <p>Ikuti keseharian kami, informasi terbaru, kegiatan perusahaan, dan berbagai update menarik lainnya.</p>
+        <span class="social-card__handle">@cvgunungmas138</span>
+      </div>
+    </a>
+
+    <a href="https://www.facebook.com/cvgunungmas138?locale=id_ID" target="_blank" rel="noopener" class="social-card social-card--fb">
+      <span class="social-card__bar"></span>
+      <span class="social-card__icon">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 10-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0022 12z"/></svg>
+      </span>
+      <div class="social-card__body">
+        <h3>Facebook</h3>
+        <p>Dapatkan informasi produk, promo terbaru, serta berbagai aktivitas kami setiap harinya.</p>
+        <span class="social-card__handle">CV Gunung Mas 138</span>
+      </div>
+    </a>
+
+    <a href="https://www.tiktok.com/@cvgunungmas138?_r=1&_t=ZS-91CDHh2xcFc" target="_blank" rel="noopener" class="social-card social-card--tiktok">
+      <span class="social-card__bar"></span>
+      <span class="social-card__icon">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.8a4.6 4.6 0 01-3.8-4.3h-3.3v14.4a2.9 2.9 0 11-2.9-2.9c.3 0 .6 0 .9.1V9.8a5.9 5.9 0 00-.9-.1A6 6 0 106.4 21.8 6 6 0 0012.6 16V9.2a7.9 7.9 0 004.6 1.5V7.4a4.6 4.6 0 01-.6 0z"/></svg>
+      </span>
+      <div class="social-card__body">
+        <h3>TikTok</h3>
+        <p>Konten edukatif, tips, behind the scene, dan video menarik lainnya hanya di TikTok kami.</p>
+        <span class="social-card__handle">@cv_gunungmas138</span>
+      </div>
+    </a>
+
+    <a href="https://www.youtube.com/@cvgunungmas138" target="_blank" rel="noopener" class="social-card social-card--yt">
+      <span class="social-card__bar"></span>
+      <span class="social-card__icon">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31 31 0 000 12a31 31 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31 31 0 0024 12a31 31 0 00-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
+      </span>
+      <div class="social-card__body">
+        <h3>YouTube</h3>
+        <p>Tonton berbagai video inspiratif, tutorial, kegiatan perusahaan, dan konten menarik lainnya.</p>
+        <span class="social-card__handle">CV Gunung Mas 138</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="social-footer-note">
+    <span class="social-footer-note__icon">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.9M16 3.1a4 4 0 010 7.8"/>
+      </svg>
+    </span>
+    <p>Kami berkomitmen untuk terus terhubung, berinovasi, dan memberikan yang terbaik untuk Anda. <strong>Terhubung bersama kami</strong> di semua platform digital!</p>
+  </div>
+</section>
+
+<!-- ============ AKTIVITAS KAMI ============ -->
+<section class="activity-section" id="aktivitas" data-reveal-scroll>
+  <div class="activity-bgpattern" aria-hidden="true"></div>
+
+  <div class="activity-header">
+    <span class="eyebrow">◆ Aktivitas Kami</span>
+    <h2>Kegiatan &amp; <span class="text-accent">Momen Kami</span></h2>
+    <p>Dokumentasi kegiatan CV. Gunung Mas 138 bersama tim dan pelanggan.</p>
+  </div>
+
+  <div class="activity-tabs" id="activityTabs">
+    <!-- diisi otomatis oleh JS -->
+  </div>
+
+  <div class="activity-grid" id="activityGrid">
+    <!-- diisi otomatis oleh JS -->
+  </div>
+</section> 
+ 
+
+  <!-- 4. JARINGAN KAMI — KANTOR CABANG -->
+<section class="about__section about__branches" id="aboutBranches" data-reveal-scroll>
+  <div class="about__container">
+    <div class="about__branches-header">
+      <div class="about__branches-kicker">
+        <span></span>
+        <strong>KANTOR CABANG</strong>
+        <span></span>
+      </div>
+      <h2 class="about__branches-title">Jangkauan Kami di <em>Berbagai Kota</em></h2>
+      <p class="about__branches-subtitle">
+        Melayani kebutuhan Anda dengan lebih dekat, di berbagai wilayah di Indonesia.
+      </p>
+      <div class="about__branches-divider" aria-hidden="true"></div>
+    </div>
+
+    <div class="about__branches-grid">
+      <article class="about__branch-card about__branch-card--tasik">
+        <div class="about__branch-photo">
+          <img src="assets/img/about/branches/tasikmalaya.jpg"
+               alt="Kantor Pusat CV. Gunung Mas 138 di Tasikmalaya" loading="lazy">
+        </div>
+        <div class="about__branch-body">
+          <div class="about__branch-accent"></div>
+          <h3 class="about__branch-name">Tasikmalaya</h3>
+          <p class="about__branch-address">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.1 7-12A7 7 0 0 0 5 9c0 5.9 7 12 7 12Z"/><circle cx="12" cy="9" r="2.4"/></svg>
+            <span>Jl. Ir. H. Juanda No. 19,<br>Kota Tasikmalaya</span>
+          </p>
+          <div class="about__branch-footer">
+            <a class="about__branch-map-button"
+               href="https://goo.gl/maps/cJNT6rKQMcjzcxWS9"
+               target="_blank" rel="noopener noreferrer">
+              <span class="about__maps-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16"><path fill="#EA4335" d="M12 2C7.86 2 4.5 5.36 4.5 9.5c0 5.5 7.5 12.5 7.5 12.5s7.5-7 7.5-12.5C19.5 5.36 16.14 2 12 2z"/><circle cx="12" cy="9.5" r="3.2" fill="#fff"/></svg></span>
+              <span>Lihat di Google Maps</span>
+              <span class="about__maps-external" aria-hidden="true">↗</span>
+            </a>
+          
+          </div>
+        </div>
+      </article>
+
+      <article class="about__branch-card about__branch-card--banjar">
+        <div class="about__branch-photo">
+          <img src="assets/img/about/branches/banjar.jpeg"
+               alt="Kantor Cabang CV. Gunung Mas 138 di Banjar" loading="lazy">
+        </div>
+        <div class="about__branch-body">
+          <div class="about__branch-accent"></div>
+          <h3 class="about__branch-name">Banjar</h3>
+          <p class="about__branch-address">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.1 7-12A7 7 0 0 0 5 9c0 5.9 7 12 7 12Z"/><circle cx="12" cy="9" r="2.4"/></svg>
+            <span>Jl. Wirasantana No.211, Jajawar,<br>Kec. Banjar, Kota Banjar, Jawa Barat 46313</span>
+          </p>
+          <div class="about__branch-footer">
+            <a class="about__branch-map-button"
+               href="https://maps.app.goo.gl/J1GJ3FntDx537PfY8"
+               target="_blank" rel="noopener noreferrer">
+              <span class="about__maps-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16"><path fill="#EA4335" d="M12 2C7.86 2 4.5 5.36 4.5 9.5c0 5.5 7.5 12.5 7.5 12.5s7.5-7 7.5-12.5C19.5 5.36 16.14 2 12 2z"/><circle cx="12" cy="9.5" r="3.2" fill="#fff"/></svg></span>
+              <span>Lihat di Google Maps</span>
+              <span class="about__maps-external" aria-hidden="true">↗</span>
+            </a>
+          
+          </div>
+        </div>
+      </article>
+
+      <article class="about__branch-card about__branch-card--bandung">
+        <div class="about__branch-photo">
+          <img src="assets/img/about/branches/bandung.jpeg"
+               alt="Kantor Cabang CV. Gunung Mas 138 di Bandung" loading="lazy">
+        </div>
+        <div class="about__branch-body">
+          <div class="about__branch-accent"></div>
+          <h3 class="about__branch-name">Bandung</h3>
+          <p class="about__branch-address">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.1 7-12A7 7 0 0 0 5 9c0 5.9 7 12 7 12Z"/><circle cx="12" cy="9" r="2.4"/></svg>
+            <span>Jl. Jamika Baru 1 No. 18,<br>Kota Bandung</span>
+          </p>
+          <div class="about__branch-footer">
+            <a class="about__branch-map-button"
+               href="https://goo.gl/maps/kN3xn4YE18nzQkdt5"
+               target="_blank" rel="noopener noreferrer">
+              <span class="about__maps-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16"><path fill="#EA4335" d="M12 2C7.86 2 4.5 5.36 4.5 9.5c0 5.5 7.5 12.5 7.5 12.5s7.5-7 7.5-12.5C19.5 5.36 16.14 2 12 2z"/><circle cx="12" cy="9.5" r="3.2" fill="#fff"/></svg></span>
+              <span>Lihat di Google Maps</span>
+              <span class="about__maps-external" aria-hidden="true">↗</span>
+            </a>
+          
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <div class="footer__brand-row">
+          <img src="assets/img/logo.jpeg" alt="Logo CV. Gunung Mas 138" class="footer__logo" />
+          <span class="footer__brand-text">CV. GUNUNG MAS <span>138</span></span>
+        </div>
+        <p class="footer__desc">
+          Distributor kebutuhan pokok &amp; bahan baku, menyalurkan ke mitra
+          usaha dengan armada dan tim yang siap bergerak setiap hari.
+        </p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Navigasi</h4>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="tentang.html">Tentang Kami</a></li>
+          <li><a href="produk.html">Produk</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Kontak</h4>
+        <ul>
+          <li>Jl. Ir. H. Juanda No. 19, Kota Tasikmalaya</li>
+          <li>WA: 0896-1000-0138</li>
+          <li>gunungmas138@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <span>© <span id="footerYear"></span> CV. Gunung Mas 138. Semua hak dilindungi.</span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  
+  <script src="js/mobile-menu.js"></script>
+  <script>
+(function () {
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const isMobileNoAnim = window.matchMedia("(max-width: 900px)").matches;
+
+  // Permintaan performa: di HP, SEMUA animasi di halaman ini dimatiin --
+  // bukan cuma dipercepat/disederhanain, tapi bener-bener nggak jalan
+  // sama sekali. Konten langsung tampil penuh begitu halaman kebuka.
+  if (prefersReducedMotion || isMobileNoAnim) {
+    // [data-reveal-scroll]/[data-reveal-journey] defaultnya opacity:0 dari
+    // CSS dasar -- kalau JS di bawah ini nggak jalan, dia bakal nyangkut
+    // transparan selamanya kalau nggak dipaksa balik ke 1 di sini.
+    document.querySelectorAll("[data-reveal-scroll], [data-reveal-journey]").forEach((el) => {
+      el.style.opacity = "1";
+      el.style.transform = "none";
+    });
+    return;
+  }
+
+  function revealOnScroll(el, { y = 26, duration = 0.8, threshold = 0.15 } = {}) {
+    gsap.set(el, { opacity: 0, y });
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        gsap.to(entry.target, { opacity: 1, y: 0, duration, ease: "power3.out" });
+        io.unobserve(entry.target);
+      });
+    }, { threshold });
+    io.observe(el);
+  }
+
+  function revealGroupOnScroll(container, itemSelector, { y = 24, stagger = 0.08, duration = 0.6, threshold = 0.1 } = {}) {
+    if (!container) return;
+    const items = container.querySelectorAll(itemSelector);
+    if (!items.length) return;
+    gsap.set(items, { opacity: 0, y });
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        gsap.to(items, { opacity: 1, y: 0, duration, stagger, ease: "power3.out" });
+        io.unobserve(entry.target);
+      });
+    }, { threshold });
+    io.observe(container);
+  }
+
+  // Section utama (data-reveal-scroll)
+  document.querySelectorAll("[data-reveal-scroll]").forEach((el) => revealOnScroll(el));
+
+  // Intro "Siapa Kami": teks dari kiri + foto dari kanan, foto nyusul dikit
+  (function () {
+    const textCol = document.querySelector(".about__intro-content-col");
+    const imgCol = document.querySelector(".about__intro-images");
+    if (!textCol || !imgCol) return;
+
+    gsap.set(textCol, { opacity: 0, x: -40 });
+    gsap.set(imgCol, { opacity: 0, x: 40 });
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        gsap.to(textCol, { opacity: 1, x: 0, duration: 0.8, ease: "power3.out" });
+        gsap.to(imgCol, { opacity: 1, x: 0, duration: 0.8, ease: "power3.out", delay: 0.12 });
+        io.unobserve(entry.target);
+      });
+    }, { threshold: 0.15 });
+
+    io.observe(document.querySelector(".about__intro-grid"));
+  })();
+
+  // Kualitas & Pengiriman: foto dari kiri, teks dari kanan (teks duluan, foto nyusul)
+  (function () {
+    const imgCol = document.querySelector(".about__quality-image-col");
+    const textCol = document.querySelector(".about__quality-content-col");
+    if (!imgCol || !textCol) return;
+
+    gsap.set(imgCol, { opacity: 0, x: -40 });
+    gsap.set(textCol, { opacity: 0, x: 40 });
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        gsap.to(textCol, { opacity: 1, x: 0, duration: 0.8, ease: "power3.out" });
+        gsap.to(imgCol, { opacity: 1, x: 0, duration: 0.8, ease: "power3.out", delay: 0.12 });
+        io.unobserve(entry.target);
+      });
+    }, { threshold: 0.15 });
+
+    io.observe(document.querySelector(".about__quality-grid"));
+  })();
+
+  // Gudang Terpusat: teks dari kiri, foto dari kanan (teks duluan, foto nyusul)
+  (function () {
+    const textCol = document.querySelector(".about__warehouse-content-col");
+    const imgCol = document.querySelector(".about__warehouse-image-col");
+    if (!textCol || !imgCol) return;
+
+    gsap.set(textCol, { opacity: 0, x: -40 });
+    gsap.set(imgCol, { opacity: 0, x: 40 });
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        gsap.to(textCol, { opacity: 1, x: 0, duration: 0.8, ease: "power3.out" });
+        gsap.to(imgCol, { opacity: 1, x: 0, duration: 0.8, ease: "power3.out", delay: 0.12 });
+        io.unobserve(entry.target);
+      });
+    }, { threshold: 0.15 });
+
+    io.observe(document.querySelector(".about__warehouse-grid"));
+  })();
+
+  // Kartu fitur di "Siapa Kami"
+  revealGroupOnScroll(document.querySelector(".about__features-row"), ".about__feature-card", { stagger: 0.1 });
+
+  // Kartu cabang
+  revealGroupOnScroll(document.querySelector(".about__branches-grid"), ".about__branch-card", { stagger: 0.12 });
+
+  // VISI: satu point dengan efek typing setelah logo tampil.
+  (function () {
+    const stage = document.querySelector(".vm-stage--visi");
+    const textEl = document.getElementById("visiTypingText");
+    const cursorEl = document.getElementById("visiTypingCursor");
+    if (!stage || !textEl) return;
+
+    const fullText = textEl.textContent.replace(/\s+/g, " ").trim();
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    let started = false;
+
+    function showFullText() {
+      textEl.textContent = fullText;
+      if (cursorEl) cursorEl.classList.add("is-finished");
+    }
+
+    function startTyping() {
+      if (started) return;
+      started = true;
+      if (reduceMotion) { showFullText(); return; }
+
+      textEl.textContent = "";
+      if (cursorEl) cursorEl.classList.remove("is-finished");
+
+      let index = 0;
+      const speed = 20;
+      function typeNext() {
+        if (index >= fullText.length) {
+          if (cursorEl) setTimeout(() => cursorEl.classList.add("is-finished"), 700);
+          return;
+        }
+        textEl.textContent += fullText.charAt(index++);
+        setTimeout(typeNext, speed);
+      }
+      setTimeout(typeNext, 450);
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      if (entries.some(entry => entry.isIntersecting)) {
+        startTyping();
+        observer.disconnect();
+      }
+    }, { threshold: 0.25 });
+
+    observer.observe(stage);
+  })();
+
+  // Misi tetap memakai animasi reveal yang sudah ada.
+  revealGroupOnScroll(document.querySelector(".vm-stage--misi"), ".about__vm-card, .vm-core-img", { stagger: 0.1, y: 20 });
+
+  // Media Digital Kami: teks dari kiri, foto fade-in (hide->muncul), grid card dari atas ke bawah
+  (function () {
+    const textCol = document.querySelector(".social-header__text");
+    const imgCol = document.querySelector(".social-header__media");
+
+    if (textCol && imgCol) {
+      gsap.set(textCol, { opacity: 0, x: -40 });
+      gsap.set(imgCol, { opacity: 0 });
+
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          gsap.to(textCol, { opacity: 1, x: 0, duration: 1.3, ease: "power3.out" });
+          gsap.to(imgCol, { opacity: 1, duration: 1.5, ease: "power2.out", delay: 0.25 });
+          io.unobserve(entry.target);
+        });
+      }, { threshold: 0.15 });
+
+      io.observe(document.querySelector(".social-header"));
+    }
+
+    revealGroupOnScroll(document.querySelector(".social-grid"), ".social-card", { y: -24, stagger: 0.18, duration: 1 });
+    revealOnScroll(document.querySelector(".social-footer-note"), { y: 16 });
+  })();
+
+  // Paksa ScrollTrigger hitung ulang posisi setelah SEMUA gambar selesai di-load
+  window.addEventListener("load", () => {
+    ScrollTrigger.refresh();
+  });
+})();
+
+// Section "Keunggulan Distribusi Kami": foto duluan, konten kanan nyusul,
+  // quote muncul ngetik per kata
+  (function () {
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const isMobileNoAnim = window.matchMedia("(max-width: 900px)").matches;
+    if (prefersReducedMotion || isMobileNoAnim) return; // quoteEl dibiarin apa adanya, nggak di-wrap span opacity:0
+
+    const section = document.getElementById("aboutCompetence");
+    const imageCol = document.querySelector(".about__competence-image-col");
+    const contentCol = document.querySelector(".about__competence-content-col");
+    const quoteEl = document.getElementById("ownerQuoteText");
+    if (!section || !imageCol || !contentCol || !quoteEl || typeof gsap === "undefined") return;
+
+    // Bungkus tiap kata quote dalam span, siap direveal satu-satu
+    const words = quoteEl.textContent.trim().split(/\s+/);
+    quoteEl.innerHTML = words
+      .map((w) => `<span class="quote-word" style="opacity:0; display:inline-block;">${w}</span>`)
+      .join(" ");
+    const wordEls = quoteEl.querySelectorAll(".quote-word");
+
+    gsap.set(imageCol, { opacity: 0, x: -40 });
+    gsap.set(contentCol, { opacity: 0, x: 40 });
+
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: section,
+        start: "top 70%",
+        once: true,
+      },
+    });
+
+    tl.to(imageCol, { opacity: 1, x: 0, duration: 0.7, ease: "power3.out" })
+      .to(contentCol, { opacity: 1, x: 0, duration: 0.7, ease: "power3.out" }, "-=0.25")
+      .to(wordEls, { opacity: 1, duration: 0.05, stagger: 0.09, ease: "none" }, "-=0.2");
+  })();
+</script>
+  <script>
+    document.getElementById("footerYear").textContent = new Date().getFullYear();
+  </script>
+  <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script src="js/activity-section.js"></script>
+<script>
+  // Foto grid Aktivitas Kami di-generate JS (activity-section.js), jadi
+  // reveal-nya baru bisa dipasang setelah render pertama selesai.
+  (function () {
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const isMobileNoAnim = window.matchMedia("(max-width: 900px)").matches;
+    if (prefersReducedMotion || isMobileNoAnim || typeof gsap === "undefined") return;
+
+    const grid = document.getElementById("activityGrid");
+    if (!grid) return;
+
+    function revealPhotos() {
+      const photos = grid.querySelectorAll(".activity-photo, .activity-video");
+      if (!photos.length) return;
+      gsap.fromTo(photos, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.5, stagger: 0.06, ease: "power2.out" });
+    }
+
+    // Reveal ulang tiap kali tab diganti (grid-nya di-render ulang tiap klik tab)
+    const mo = new MutationObserver(revealPhotos);
+    mo.observe(grid, { childList: true });
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        revealPhotos();
+        io.unobserve(entry.target);
+      });
+    }, { threshold: 0.1 });
+    io.observe(grid);
+  })();
+</script>
+
+<script>
+(function () {
+  if (typeof maplibregl === "undefined") return;
+
+  const MINI_BRANCHES = [
+    { id: "miniMapTasik",   lng: 108.19740081887772, lat: -7.339495227099354 },
+    { id: "miniMapBanjar",  lng: 108.50019324182777, lat: -7.365097096770324 },
+    { id: "miniMapBandung", lng: 107.58529337153738, lat: -6.919661246216518 },
+  ];
+
+  MINI_BRANCHES.forEach((b) => {
+    const el = document.getElementById(b.id);
+    if (!el) return;
+    // Tetap pertahankan script MapLibre lama, tetapi jangan jalankan MapLibre
+    // pada area cabang yang sekarang berupa link ke Google Maps.
+    if (el.tagName === "A") return;
+
+    const map = new maplibregl.Map({
+      container: b.id,
+      style: "https://tiles.openfreemap.org/styles/liberty",
+      center: [b.lng, b.lat],
+      zoom: 13,
+      interactive: false, // kotak kecil, nggak perlu bisa di-drag/zoom manual
+      attributionControl: { compact: true },
+    });
+
+    new maplibregl.Marker({ color: "#e31e24" })
+      .setLngLat([b.lng, b.lat])
+      .addTo(map);
+  });
+})();
+
+// (Sistem animasi kedua buat #socmed udah dihapus -- tadinya ada 2 script beda
+// sama-sama animasiin .social-header/.social-card, rebutan elemen & timing.
+// Yang dipertahankan cuma yang di script pertama, lebih detail: teks & foto
+// header dipisah animasinya, bukan digabung jadi satu blok.)
+</script>
+  <script>
+/* ============================================================
+   VALUE & BUDAYA — scroll-pinned controller
+   Murni JS (nggak nyentuh global scope selain 1 IIFE), dari prototype
+   yang dikasih user, id/class-nya udah disamain ke versi vc- prefix.
+   ============================================================ */
+
+/* =========================================================
+   GENERIC SCROLL CONTROLLER
+   Each section owns its own 01 -> 08 timeline.
+   ========================================================= */
+
+(() => {
+
+  const clamp = (n,min,max) => Math.max(min,Math.min(max,n));
+
+  // Di HP: langsung tampil final state semua, TANPA pasang scroll listener
+  // sama sekali (ini yang paling berat -- ngitung getBoundingClientRect
+  // tiap scroll event). Permintaan performa, bukan cuma matiin animasinya.
+  const isMobile = window.matchMedia("(max-width: 900px)").matches;
+
+  function createController(config){
+
+    const section = document.querySelector(config.section);
+    const items = [...document.querySelectorAll(config.items)];
+    const numbers = config.numbers
+      ? [...document.querySelectorAll(config.numbers)]
+      : [];
+    const segments = config.segments
+      ? [...document.querySelectorAll(config.segments)]
+      : [];
+
+    const progress = document.querySelector(config.progress);
+    const label = document.querySelector(config.label);
+    const header = config.header
+      ? document.querySelector(config.header)
+      : null;
+    const hint = config.hint
+      ? document.querySelector(config.hint)
+      : null;
+
+    if (isMobile) {
+      items.forEach((item) => item.classList.add("vc-visible"));
+      numbers.forEach((item) => item.classList.add("vc-active"));
+      segments.forEach((item) => item.classList.add("vc-active"));
+      if (progress) progress.style.height = "100%";
+      if (label) label.textContent = "08 / 08";
+      if (hint) hint.style.opacity = "0";
+      return; // nggak pasang scroll/resize listener sama sekali
+    }
+
+    function getProgress(){
+
+      const rect = section.getBoundingClientRect();
+      const distance = section.offsetHeight - window.innerHeight;
+
+      if(distance <= 0) return 0;
+
+      return clamp(-rect.top / distance,0,1);
+    }
+
+    function render(){
+
+      const p = getProgress();
+
+      /* First 5% is the introduction. */
+      const intro = .05;
+      const usable = 1 - intro;
+
+      let step = 0;
+
+      if(p > intro){
+        step = Math.ceil(((p-intro)/usable)*8);
+      }
+
+      step = clamp(step,0,8);
+
+      /*
+       * IMPORTANT:
+       * The scroll position controls the state.
+       * No setTimeout and no autoplay.
+       */
+      items.forEach((item,index)=>{
+        item.classList.toggle("vc-visible",index < step);
+      });
+
+      numbers.forEach((item,index)=>{
+        item.classList.toggle("vc-active",index < step);
+      });
+
+      segments.forEach((item,index)=>{
+        item.classList.toggle("vc-active",index < step);
+      });
+
+      if(progress){
+        progress.style.height = `${p*100}%`;
+      }
+
+      if(label){
+        label.textContent =
+          step === 0
+          ? "INTRO"
+          : `${String(step).padStart(2,"0")} / 08`;
+      }
+
+      if(header){
+        header.classList.toggle("vc-moved",step > 0);
+      }
+
+      if(hint){
+        hint.style.opacity = p > .035 ? "0" : "1";
+      }
+    }
+
+    let raf = 0;
+
+    function request(){
+
+      if(raf) return;
+
+      raf = requestAnimationFrame(()=>{
+        render();
+        raf = 0;
+      });
+    }
+
+    window.addEventListener("scroll",request,{passive:true});
+    window.addEventListener("resize",request);
+
+    render();
+  }
+
+
+  /* Section 1 controller */
+  createController({
+    section:"#vcBudaya",
+    items:".vc-budaya .vc-card",
+    numbers:".vc-budaya .vc-number",
+    segments:".vc-budaya .vc-ring-segment",
+    progress:"#vcP1",
+    label:"#vcPl1",
+    header:"#vcBudayaHeader",
+    hint:"#vcHint1"
+  });
+
+
+  /* Section 2 controller */
+  createController({
+    section:"#vcValues",
+    items:".vc-values .vc-value-item",
+    progress:"#vcP2",
+    label:"#vcPl2",
+    hint:"#vcHint2"
+  });
+
+})();
+</script>
+</body>
+</html>

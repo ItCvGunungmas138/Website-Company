@@ -1,0 +1,143 @@
+.karir-page-wrap {
+  padding-top: calc(70px + 1.5rem);
+}
+
+.karir-hero {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  padding-inline: 1.5rem;
+}
+.karir-hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 800;
+  color: var(--color-navy-900);
+  margin: 0.5rem 0 1rem;
+}
+.karir-hero p {
+  font-size: 1.05rem;
+  color: var(--color-stone-600);
+  line-height: 1.6;
+}
+
+.karir-grid-section {
+  margin: 0 clamp(1rem, 3vw, 2.25rem) 3rem;
+}
+
+.karir-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.karir-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-stone-200);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: transform var(--dur-fast), box-shadow var(--dur-fast);
+}
+.karir-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -20px rgba(18,23,58,0.2);
+}
+
+.karir-card__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.karir-card__badge {
+  background: rgba(227,30,36,0.1);
+  color: var(--color-red-600);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.3em 0.7em;
+  border-radius: 999px;
+}
+.karir-card__location {
+  font-size: 0.75rem;
+  color: var(--color-stone-400);
+}
+
+.karir-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--color-navy-900);
+}
+
+.karir-card__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.karir-card__list li {
+  font-size: 0.85rem;
+  color: var(--color-stone-600);
+  padding-left: 1.1rem;
+  position: relative;
+  line-height: 1.4;
+}
+.karir-card__list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--color-gold-500);
+  font-weight: 700;
+}
+
+.karir-card__benefits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.karir-card__benefits span {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  background: var(--color-stone-50);
+  color: var(--color-navy-700);
+  padding: 0.25em 0.6em;
+  border-radius: 999px;
+  border: 1px solid var(--color-stone-200);
+}
+
+.karir-card__btn {
+  margin-top: auto;
+  justify-content: center;
+  width: 100%;
+}
+
+@media (max-width: 620px) {
+  .karir-grid { grid-template-columns: 1fr; }
+  .karir-grid-section { margin-inline: 0.75rem; }
+}
+
+.karir-card {
+  padding: 0; /* padding pindah ke .karir-card__body */
+  overflow: hidden;
+}
+
+.karir-card__photo {
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+}
+.karir-card__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.karir-card__body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex: 1;
+}

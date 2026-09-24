@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop & Katalog B2B — CV. Gunung Mas 138</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/mobile-patch.css" />
+  <link rel="stylesheet" href="css/shop.css" />
+  <style>.navbar { opacity: 1 !important; }</style>
+</head>
+<body>
+
+  <!-- ============ NAVBAR KHUSUS SHOP ============ -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner shop-nav-inner">
+      <a href="index.html" class="navbar__brand">
+        <img src="assets/img/logo.jpeg" alt="Logo CV. Gunung Mas 138" class="navbar__logo" />
+        <span class="navbar__brand-text">CV. GUNUNG MAS <span>138</span></span>
+      </a>
+
+      <!-- TODO: revert ke shop.html atau path production sebelum deploy -->
+<nav class="navbar__links">
+  <a href="index.html" class="navbar__link">Beranda</a>
+  <a href="tentang.html" class="navbar__link">Tentang Kami</a>
+  <a href="produk.html" class="navbar__link">Produk</a>
+  <a href="http://localhost:5173/" class="navbar__link navbar__link--soon" title="Segera hadir">Belanja</a>
+  <a href="karir.html" class="navbar__link">Karir</a>
+  <a href="kontak.html" class="navbar__link">Kontak</a>
+</nav>
+
+      <div class="shop-nav-right">
+        <div class="shop-icon-btn" title="Pencarian">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2"/><path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <div class="shop-icon-btn" title="Notifikasi">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="badge-dot">3</span>
+        </div>
+        <a href="#login" class="btn btn-primary shop-login-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2M12 11a4 4 0 100-8 4 4 0 000 8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Masuk / Daftar
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ UTAMA: LAYOUT 3 KOLOM (Kategori, Katalog, Keranjang) ============ -->
+  <main class="shop-main">
+    
+    <!-- KOLOM 1: KATEGORI & FILTER SIDEBAR -->
+    <aside class="shop-sidebar">
+      <div class="shop-box">
+        <h3>Kategori Produk</h3>
+        <ul class="shop-cat-list" id="categoryList">
+          <li class="active" data-cat="Semua"><span>Semua Produk</span></li>
+          <li data-cat="Beras"><span>Beras</span></li>
+          <li data-cat="Minyak Goreng"><span>Minyak Goreng</span></li>
+          <li data-cat="Tepung"><span>Tepung</span></li>
+          <li data-cat="Tissue"><span>Tissue</span></li>
+          <li data-cat="Minuman"><span>Minuman</span></li>
+          <li data-cat="Bumbu Dapur"><span>Bumbu Dapur</span></li>
+        </ul>
+      </div>
+
+      <div class="shop-box">
+        <div class="filter-head">
+          <h3>Filter</h3>
+          <button id="resetFilter" class="reset-link">Reset</button>
+        </div>
+        
+        <div class="filter-group">
+          <h4>Brand / Principal</h4>
+          <label><input type="checkbox" name="brand" value="Wilmar" /> Wilmar</label>
+          <label><input type="checkbox" name="brand" value="Livi" /> Livi</label>
+          <label><input type="checkbox" name="brand" value="Ajinomoto" /> Ajinomoto</label>
+          <label><input type="checkbox" name="brand" value="Unilever" /> Unilever</label>
+        </div>
+
+        <div class="filter-group">
+          <h4>Kemasan</h4>
+          <label><input type="checkbox" name="pack" value="Karton" /> Karton</label>
+          <label><input type="checkbox" name="pack" value="Pouch" /> Pouch</label>
+          <label><input type="checkbox" name="pack" value="Botol" /> Botol</label>
+          <label><input type="checkbox" name="pack" value="Karung" /> Karung</label>
+        </div>
+      </div>
+    </aside>
+
+    <!-- KOLOM 2: KONTEN UTAMA (Banner + Search + Grid Produk) -->
+    <section class="shop-content">
+      
+      <!-- Banner Toko -->
+      <div class="shop-banner">
+        <div class="shop-banner__text">
+          <h1>Belanja Mudah<br>Untuk Bisnis Anda</h1>
+          <p>Produk berkualitas, harga kompetitif<br>dan pengiriman terpercaya.</p>
+        </div>
+        <div class="shop-banner__graphic">
+          <div class="floating-cart-icon">🛒</div>
+        </div>
+      </div>
+
+      <!-- Bar Pencarian & Urutan -->
+      <div class="shop-toolbar">
+        <div class="shop-search-bar">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2"/><path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <input type="text" id="searchInput" placeholder="Cari produk, brand, atau kategori..." />
+        </div>
+        <div class="shop-sort-wrap">
+          <span>Urutkan</span>
+          <select id="sortSelect">
+            <option value="terbaru">Terbaru</option>
+            <option value="termurah">Harga Terendah</option>
+            <option value="termahal">Harga Tertinggi</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Tombol Filter Cepat Brand -->
+      <div class="shop-brand-pills" id="brandPills">
+        <button class="brand-pill active" data-brand="Semua">Semua</button>
+        <button class="brand-pill" data-brand="Wilmar">Wilmar</button>
+        <button class="brand-pill" data-brand="Livi">Livi</button>
+        <button class="brand-pill" data-brand="Ajinomoto">Ajinomoto</button>
+        <button class="brand-pill" data-brand="Unilever">Unilever</button>
+      </div>
+
+      <!-- GRID PRODUK (Dirender otomatis via JS) -->
+      <div class="shop-product-grid" id="shopProductGrid">
+        <!-- Kartu produk masuk sini -->
+      </div>
+
+    </section>
+
+    <!-- KOLOM 3: KERANJANG BELANJA (CART SIDEBAR) -->
+    <aside class="shop-cart-sidebar">
+      <div class="shop-box cart-box">
+        <div class="cart-header">
+          <h3>Keranjang Belanja</h3>
+          <span class="cart-count-badge" id="cartCountBadge">0</span>
+        </div>
+
+        <!-- Daftar Item di Keranjang -->
+        <div class="cart-items-list" id="cartItemsList">
+          <p class="cart-empty-text">Keranjang masih kosong</p>
+        </div>
+
+        <!-- Ringkasan Pembayaran -->
+        <div class="cart-summary">
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <span id="cartSubtotal">Rp 0</span>
+          </div>
+          <div class="summary-row">
+            <span>Estimasi Ongkir</span>
+            <span id="cartShipping">Rp 25.000</span>
+          </div>
+          <div class="summary-row total-row">
+            <span>Total</span>
+            <span id="cartTotal">Rp 25.000</span>
+          </div>
+        </div>
+
+        <!-- Tombol Aksi -->
+        <button class="btn btn-primary checkout-btn" id="checkoutBtn">
+          Lanjut ke Checkout ➔
+        </button>
+        <button class="btn btn-outline view-cart-btn" id="clearCartBtn">
+          Kosongkan Keranjang
+        </button>
+      </div>
+
+      <!-- Badge Keunggulan di Bawah Keranjang -->
+      <div class="shop-perks-box">
+        <div class="perk-item">
+          <span>🛡️</span>
+          <div>
+            <h4>Produk Original</h4>
+            <p>100% Original</p>
+          </div>
+        </div>
+        <div class="perk-item">
+          <span>⚡</span>
+          <div>
+            <h4>Pengiriman Cepat</h4>
+            <p>Aman & Terpercaya</p>
+          </div>
+        </div>
+        <div class="perk-item">
+          <span>🤝</span>
+          <div>
+            <h4>Harga Kompetitif</h4>
+            <p>Untuk Mitra Terbaik</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+  </main>
+
+  <!-- ============ FOOTER RINGKAS ============ -->
+  <footer class="footer" style="margin-top: 3rem;">
+    <div class="container footer__bottom" style="text-align: center;">
+      <span>© <span id="footerYear"></span> CV. Gunung Mas 138. Semua hak dilindungi.</span>
+    </div>
+  </footer>
+
+  <script src="js/shop-data.js"></script>
+  <script src="js/shop.js"></script>
+  <script>
+    document.getElementById("footerYear").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,1134 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CV. Gunung Mas 138 — distributor kebutuhan pokok, cepat dan tepercaya." />
+  <title>CV. Gunung Mas 138 — Distributor Kebutuhan Pokok</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/mobile-patch.css" />
+  <!-- setelah style.css & mobile-patch.css -->
+
+
+  <style>
+  .navbar { opacity: 1; }
+</style>
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="#" class="navbar__brand">
+        <img src="assets/img/logo.jpeg" alt="Logo CV. Gunung Mas 138" class="navbar__logo" />
+        <span class="navbar__brand-text">CV. GUNUNG MAS <span>138</span></span>
+      </a>
+
+     <!-- TODO: revert ke shop.html atau path production sebelum deploy -->
+<nav class="navbar__links">
+  <a href="index.html" class="navbar__link navbar__link--active">Beranda</a>
+  <a href="tentang.html" class="navbar__link">Tentang Kami</a>
+  <a href="produk.html" class="navbar__link">Produk</a>
+  <a href="#" class="navbar__link navbar__link--soon" title="Segera hadir">Belanja</a>
+  <a href="karir.html" class="navbar__link">Karir</a>
+  <a href="kontak.html" class="navbar__link">Kontak</a>
+</nav>
+
+      <a href="kontak.html" class="btn btn-primary navbar__cta">
+        Hubungi Kami
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.3 2.6 3.4 4.7 6 6l2-2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.9c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.2 1l-2 2.3z" fill="currentColor"/></svg>
+      </a>
+
+      <button class="navbar__burger" id="navBurger" aria-label="Buka menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="navbar__mobile-panel" id="navMobilePanel">
+      <a href="index.html" class="navbar__mobile-link">Beranda</a>
+      <a href="tentang.html" class="navbar__mobile-link">Tentang Kami</a>
+      <a href="produk.html" class="navbar__mobile-link">Produk</a>
+      <a href="#" class="navbar__mobile-link navbar__mobile-link--soon" title="Segera hadir">Belanja</a>
+      <a href="karir.html" class="navbar__mobile-link">Karir</a>
+      <a href="kontak.html" class="navbar__mobile-link">Kontak</a>
+      <a href="kontak.html" class="btn btn-primary navbar__mobile-cta">
+        Hubungi Kami
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.3 2.6 3.4 4.7 6 6l2-2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.9c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.2 1l-2 2.3z" fill="currentColor"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero__media">
+      <video
+        id="heroVideoA"
+        class="hero__video"
+        autoplay
+        muted
+        playsinline
+        
+      >
+        <source src="assets/video/hero-loop.mp4" type="video/mp4" />
+      </video>
+      <video
+        id="heroVideoB"
+        class="hero__video hero__video--standby"
+        muted
+        playsinline
+      >
+        <source src="assets/video/hero-loop.mp4" type="video/mp4" />
+      </video>
+      <div class="hero__gradient"></div>
+      <canvas id="heroParticles" class="hero__particles"></canvas>
+    </div>
+
+    <div class="hero__content">
+      <span class="eyebrow" data-reveal>◆ CV. Gunung Mas 138</span>
+
+      <h2 class="hero__title" data-reveal>
+       Partner Distributor <span class="text-accent" style="font-weight: 800;">Terpercaya</span> untuk 
+       
+      </h2>
+      <h2 class="hero__title_2" data-reveal>Kebutuhan Bisnis Anda</h2>
+
+      <p class="hero__desc" data-reveal>
+        Mitra pasokan untuk kelancaran dan pertumbuhan bisnis Anda. Menyediakan sembako dan kebutuhan usaha bagi toko, grosir, hotel, restoran, serta bakery di Tasikmalaya dan Priangan Timur.
+      </p>
+
+      <div class="hero__actions" data-reveal>
+        <a href="produk.html" class="btn btn-primary">Belanja Sekarang !</a>
+        <a href="produk.html" class="btn btn-outline">Pelajari Produk</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATS BAR ============ -->
+  <div class="stats-bar">
+    <div class="stats-bar__inner">
+
+      <div class="stats-bar__item" data-count="15">
+        <span class="stats-bar__icon stats-bar__icon--navy">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 16V6a1 1 0 011-1h9a1 1 0 011 1v10M3 16h11M3 16H1.5M14 16h3.5M14 8h3l2.7 3.4c.2.2.3.5.3.8V16h-1M14 16a2 2 0 104 0M6 16a2 2 0 104 0" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="stats-bar__number"><span class="stats-bar__value">0</span>+</span>
+        <span class="stats-bar__label">Armada</span>
+        <span class="stats-bar__sub">Siap mengantar ke seluruh wilayah Priangan Timur</span>
+      </div>
+
+      <div class="stats-bar__item" data-count="50+" data-suffix="+">
+        <span class="stats-bar__icon stats-bar__icon--red">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M17 20v-1a4 4 0 00-4-4H7a4 4 0 00-4 4v1M14.5 3.4a4 4 0 010 7.2M21 20v-1a4 4 0 00-3-3.9M10 11a4 4 0 100-8 4 4 0 000 8z" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="stats-bar__number"><span class="stats-bar__value">0</span>+</span>
+        <span class="stats-bar__label">Karyawan</span>
+        <span class="stats-bar__sub">Tim profesional dan berpengalaman</span>
+      </div>
+
+      
+
+      <div class="stats-bar__item" data-count="500" data-suffix="+">
+        <span class="stats-bar__icon stats-bar__icon--navy">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M21 8l-9-5-9 5 9 5 9-5zM3 8v8l9 5 9-5V8M12 13v8" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="stats-bar__number"><span class="stats-bar__value">0</span>+</span>
+        <span class="stats-bar__label">Produk</span>
+        <span class="stats-bar__sub">Lengkap untuk kebutuhan bisnis Anda</span>
+      </div>
+
+      
+
+      <div class="stats-bar__item" data-count="2000" data-suffix="+">
+        <span class="stats-bar__icon stats-bar__icon--red">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 9l1-5h16l1 5M3 9v10a1 1 0 001 1h16a1 1 0 001-1V9M3 9h18M9 13a3 3 0 006 0" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="stats-bar__number"><span class="stats-bar__value">0</span>+</span>
+        <span class="stats-bar__label">Customer</span>
+        <span class="stats-bar__sub">Mitra bisnis yang terus bertumbuh</span>
+      </div>
+
+      <!-- Poin ke-5 ditambahkan supaya bar penuh sampai pinggir — angka masih asumsi, ganti sesuai data asli -->
+      <div class="stats-bar__item" data-count="26" data-suffix="+">
+        <span class="stats-bar__icon stats-bar__icon--navy">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 2M21 12a9 9 0 11-9-9 9 9 0 019 9z" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="stats-bar__number"><span class="stats-bar__value">0</span>+</span>
+        <span class="stats-bar__label">Tahun Pengalaman</span>
+        <span class="stats-bar__sub">Konsisten melayani dengan bekal pengalaman</span>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ============ SECTION TIMELINE & GALLERY (Dengan Animasi) ============ -->
+
+
+<section class="keunggulan" id="keunggulan">
+  <div class="keunggulan__header">
+    <h2 class="keunggulan__title">OUR SERVICES</h2>
+    <div class="keunggulan__divider"></div>
+  </div>
+
+  <div class="keunggulan__grid">
+
+    <div class="keunggulan__card">
+      <div class="keunggulan__card-media">
+        <img src="assets/img/book/armada3.png" alt="Armada" loading="lazy" />
+      </div>
+      <div class="keunggulan__card-overlay">
+        <span class="keunggulan__number">01</span>
+        <h3>Distribusi Terpercaya</h3>
+        <p>Kami memastikan pengiriman lebih cepat, tepat, dan aman hingga ke tangan pelanggan.</p>
+        <h5>Kiriman Same Day (khusus dalam kota) atau H+1 dari PO diterima</h5>
+      </div>
+    </div>
+
+    <div class="keunggulan__card">
+      <div class="keunggulan__card-media">
+        <img src="assets/img/book/tmgm.jpeg" alt="Tim Profesional" loading="lazy" />
+      </div>
+      <div class="keunggulan__card-overlay">
+        <span class="keunggulan__number">02</span>
+        <h3>Layanan Profesional</h3>
+        <p>Didukung tim berpengalaman yang memahami kebutuhan bisnis dan siap memberikan layanan terbaik.</p>
+        <h5>Dengan 50 Lebih Karyawan Profesional</h5>
+      </div>
+    </div>
+
+    <div class="keunggulan__card">
+      <div class="keunggulan__card-media">
+        <img src="assets/img/book/produk.png" alt="Produk" loading="lazy" />
+      </div>
+      <div class="keunggulan__card-overlay">
+        <span class="keunggulan__number">03</span>
+        <h3>Produk Berkualitas</h3>
+        <p>Menyediakan berbagai kebutuhan harian seperti beras, minyak goreng, tepung, tissue, bumbu, dan produk FMCG lainnya untuk mendukung bisnis Anda.</p>
+        <h5>500+ Produk FMCG</h5>
+      </div>
+    </div>
+
+    <div class="keunggulan__card">
+      <div class="keunggulan__card-media">
+        <img src="assets/img/book/owner-principal-01.png" alt="Kerjasama Brand" loading="lazy" />
+      </div>
+      <div class="keunggulan__card-overlay">
+        <span class="keunggulan__number">04</span>
+        <h3>Mitra Resmi Brand Ternama</h3>
+        <p>Bekerja sama langsung dengan principal terpercaya untuk menjamin keaslian produk dan ketersediaan yang stabil.</p>
+        <h5>Brand Ternama</h5>
+      </div>
+    </div>
+
+  </div>
+  
+</section>
+
+   <!-- 2. INTRO DUA KOLOM SECTION -->
+  <section class="about__section about__intro" id="aboutIntro">
+    <div class="about__container">
+      <div class="about__intro-grid">
+        <div class="about__intro-content-col">
+          <div class="about__intro-title-wrap">
+          
+          <h2 class="about__intro-title">Menyalurkan Kebutuhan Pokok dengan <span>Cepat & Tepercaya</span></h2>
+          <p class="about__intro-text">
+            CV. Gunung Mas 138 hadir sebagai distributor terdepan yang berdedikasi tinggi dalam penyediaan dan distribusi kebutuhan pokok berkualitas tinggi ke se-Priangan timur. Kami berkomitmen menjaga kestabilan rantai pasok demi kepuasan dan kelancaran bisnis para mitra pedagang maupun retail di setiap daerah.
+          </p>
+          <p class="about__intro-text">
+            Dengan dukungan jaringan logistik yang solid dan manajemen operasional yang profesional, Kami memastikan pengiriman lebih cepat, tepat, dan aman hingga ke tangan pelanggan.
+         
+          </p>
+          </div>
+        </div>
+
+        <div class="about__intro-image-col">
+          <div class="about__intro-images">
+            <img src="assets/img/about/truck.png" alt="Armada Distribusi CV. Gunung Mas 138" class="about__intro-img-main">
+            <div class="about__intro-badge">
+              <span class="about__intro-badge-number">26+</span>
+              <span class="about__intro-badge-text">Tahun Pengalaman</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about__features-row">
+        <div class="about__feature-card">
+          <div class="about__feature-icon">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <path d="M5 25L12.2 15.7L17 20L21.2 12L27 25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M21.2 12L23.4 14.8" stroke="#E31E24" stroke-width="2" stroke-linecap="round"/>
+              <path d="M21.2 12L25.3 10.2" stroke="#E31E24" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="21.2" cy="12" r="2" fill="#E31E24"/>
+              <path d="M5 25H27" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="about__feature-title">Pengalaman</h3>
+          <p class="about__feature-desc">Berbekal pengalaman di bidang distribusi, kami memahami pentingnya ketersediaan barang dan pelayanan yang responsif untuk mendukung kelancaran usaha Anda.</p>
+        </div>
+
+        <div class="about__feature-card">
+          <div class="about__feature-icon">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <circle cx="16" cy="16" r="10" stroke="currentColor" stroke-width="2"/>
+              <path d="M16 10V16L20.2 18.4" stroke="#E31E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M5 11.5L2.8 13M5.2 16H2.5M27 20.5L29.2 19" stroke="#2C76C9" stroke-width="1.8" stroke-linecap="round"/>
+              <circle cx="16" cy="16" r="2" fill="#E31E24"/>
+            </svg>
+          </div>
+          <h3 class="about__feature-title">Pengiriman yang Andal</h3>
+          <p class="about__feature-desc">Kami mengutamakan ketepatan pesanan dan pengiriman agar kebutuhan usaha Anda terpenuhi dengan baik.</p>
+        </div>
+
+        <div class="about__feature-card">
+          <div class="about__feature-icon">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <path d="M16 4L26 9.5V21.5L16 27L6 21.5V9.5L16 4Z" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/>
+              <path d="M6 9.5L16 15L26 9.5M16 15V27" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/>
+              <circle cx="16" cy="15" r="2.3" fill="#E31E24"/>
+              <circle cx="4" cy="8" r="1.5" fill="#2C76C9"/>
+              <circle cx="28" cy="24" r="1.5" fill="#E31E24"/>
+              <path d="M5.5 8.7L9 10.5M23 21L27 23" stroke="#2C76C9" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="about__feature-title">One Stop Solution</h3>
+          <p class="about__feature-desc">Temukan beragam sembako dan kebutuhan usaha dalam satu mitra distribusi. Pengadaan barang menjadi lebih mudah dan praktis bersama CV Gunung Mas 138.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. KUALITAS & PENGIRIMAN SECTION -->
+<section class="about__section about__quality" id="aboutQuality">
+    <div class="about__container">
+      <div class="about__quality-grid">
+
+        <div class="about__quality-image-col">
+          <div class="about__quality-image-wrap">
+            <img src="assets/img/about/armada.png" alt="Armada CV. Gunung Mas 138" class="about__quality-img">
+            <div class="about__quality-badges">
+              <div class="about__quality-badge">
+                <span class="about__quality-badge-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </span>
+                <div>
+                  <strong>SAME DAY*</strong>
+                  <span>Order sebelum jam 12.00 dikirim hari yang sama (khusus dalam kota)</span>
+                </div>
+              </div>
+              <div class="about__quality-badge">
+                <span class="about__quality-badge-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="7" width="18" height="13" rx="2"></rect>
+                    <path d="M3 11h18M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"></path>
+                  </svg>
+                </span>
+                <div>
+                  <strong>H+1</strong>
+                  <span>Order setelah jam 12.00 dikirim keesokan harinya</span>
+                </div>
+              </div>
+              <div class="about__quality-badge">
+                <span class="about__quality-badge-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2"></rect>
+                    <path d="M16 2v4M8 2v4M3 10h18"></path>
+                  </svg>
+                </span>
+                <div>
+                  <strong>JAM OPERASIONAL</strong>
+                  <span>08.00–17.00, setiap hari kecuali tanggal merah</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__quality-content-col">
+          
+          <h2 class="about__quality-title">Kualitas Barang Terjamin, Pengiriman <span>Super Cepat</span></h2>
+          <div class="about__quality-underline"></div>
+
+          <p class="about__quality-text">
+            Kami memastikan setiap produk yang Anda terima berada dalam kondisi
+            terbaik dan terpercaya.
+            Proses penyimpanan hingga pengiriman ditangani dengan standar
+            operasional yang terjaga, sehingga kualitas dan kondisi barang tetap
+            optimal saat sampai di tujuan.
+          </p>
+          <p class="about__quality-text">
+            Untuk kebutuhan pengiriman, kami mengutamakan kecepatan tanpa
+            mengabaikan ketepatan. Pesanan yang masih berada dalam jangkauan
+            kota kami upayakan untuk dikirim di hari yang sama (same day).
+            Apabila belum memungkinkan, pesanan akan diproses untuk dikirim
+            pada hari berikutnya (H+1), sehingga kebutuhan bisnis Anda tetap
+            terpenuhi tanpa menunggu terlalu lama.
+          </p>
+
+          <div class="about__quality-features">
+            <div class="about__quality-feature">
+              <div class="about__quality-feature-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"></path>
+                </svg>
+              </div>
+              <div>
+                <h4>Produk Terjamin</h4>
+                <p>Kami hanya mendistribusikan produk dari brand terpercaya dengan
+                  penyimpanan dan penanganan sesuai standar kualitas yang ketat.</p>
+              </div>
+            </div>
+
+            <div class="about__quality-feature">
+              <div class="about__quality-feature-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M13 2L3 14h7l-1 8 11-14h-7l1-6z"></path>
+                </svg>
+              </div>
+              <div>
+                <h4>Pengiriman Cepat</h4>
+                <p>Pengiriman dalam kota diupayakan same day. Jika belum
+                  memungkinkan, dikirim H+1 keesokan harinya.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="about__quality-bottom-row">
+        <div class="about__quality-mini">
+          <span class="about__quality-mini-icon">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <path d="M16 4L26 8V15.5C26 22 21.5 26.5 16 28C10.5 26.5 6 22 6 15.5V8L16 4Z" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/>
+              <path d="M11 16L14.2 19.2L21.5 11.8" stroke="#2C76C9" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="24.8" cy="8.8" r="2" fill="#E31E24"/>
+            </svg>
+          </span>
+          <span>Barang Asli &amp; Berkualitas</span>
+          <p>Seluruh produk yang kami distribusikan asli dan terjamin kualitasnya.</p>
+        </div>
+
+        <div class="about__quality-mini">
+          <span class="about__quality-mini-icon">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <path d="M4 20H7L9.5 11H21L23.5 20H28V24H4V20Z" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/>
+              <path d="M9.5 11L12 7H20L22 11" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/>
+              <circle cx="10" cy="24.5" r="2.4" fill="#E31E24"/>
+              <circle cx="23" cy="24.5" r="2.4" fill="#2C76C9"/>
+              <path d="M12.5 15.5H19.5" stroke="#E31E24" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span>Penanganan Profesional</span>
+          <p>Ditangani tim berpengalaman dengan standar operasional yang ketat.</p>
+        </div>
+
+        <div class="about__quality-mini">
+          <span class="about__quality-mini-icon">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <path d="M16 28C16 28 25 20.5 25 13.5C25 8.25 21 5 16 5C11 5 7 8.25 7 13.5C7 20.5 16 28 16 28Z" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/>
+              <circle cx="16" cy="13" r="3.2" stroke="#E31E24" stroke-width="1.9"/>
+              <path d="M3.5 23.5H9M23 23.5H28.5" stroke="#2C76C9" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M6 20.5L3.5 23.5L6 26.5M26 20.5L28.5 23.5L26 26.5" stroke="#E31E24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span>Jangkauan Luas</span>
+          <p>Melayani distribusi ke berbagai wilayah dengan jaringan yang terus berkembang.</p>
+        </div>
+
+        <div class="about__quality-mini">
+          <span class="about__quality-mini-icon">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <path d="M8 16.5L12.5 21L24.5 9" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6 16C6 10.5 10.5 6 16 6C21.5 6 26 10.5 26 16C26 21.5 21.5 26 16 26C13.3 26 10.8 24.9 9 23.1" stroke="#2C76C9" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M7 8.5L4.5 11M25 23.5L27.5 21" stroke="#E31E24" stroke-width="1.7" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span>Komitmen Untuk Anda</span>
+          <p>Selalu mengutamakan kepuasan dan kepercayaan mitra bisnis kami.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: GUDANG TERPUSAT -->
+  <section class="about__section about__warehouse" id="aboutWarehouse">
+    <div class="about__container">
+      <div class="about__warehouse-grid">
+
+        <div class="about__warehouse-content-col">
+         
+          <h2 class="about__warehouse-title">Penyimpanan Aman, <span>Kualitas Tetap Terjaga</span></h2>
+          <div class="about__warehouse-underline"></div>
+
+          <p class="about__warehouse-text">
+            CV. Gunung Mas 138 memiliki gudang penyimpanan yang luas, bersih,
+            dan terkelola dengan baik untuk menjaga kualitas setiap produk yang
+            kami distribusikan.
+          </p>
+          <p class="about__warehouse-text">
+            Dengan sistem manajemen stok yang terstruktur dan penempatan
+            barang sesuai SOP, kami memastikan setiap produk tersedia dalam
+            kondisi terbaik dan siap dikirim kapan pun dibutuhkan.
+          </p>
+
+          <div class="about__warehouse-stats">
+            <div class="about__warehouse-stat">
+              <div class="about__warehouse-stat-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 21h18M4 21V8l8-5 8 5v13M9 21v-6h6v6"></path>
+                </svg>
+              </div>
+              <div>
+                <h4>Gudang Luas &amp; Aman</h4>
+                <strong>2.000+ m&sup2;</strong>
+                <p>Area penyimpanan yang luas dan terjaga keamanannya.</p>
+              </div>
+            </div>
+
+            <div class="about__warehouse-stat">
+              <div class="about__warehouse-stat-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 8l-9-5-9 5 9 5 9-5zM3 8v8l9 5 9-5V8M12 13v8"></path>
+                </svg>
+              </div>
+              <div>
+                <h4>Kapasitas Stok Terjaga</h4>
+                <strong>10.000+</strong>
+                <p>Produk selalu tersedia untuk berbagai kebutuhan.</p>
+              </div>
+            </div>
+
+            <div class="about__warehouse-stat">
+              <div class="about__warehouse-stat-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"></path>
+                </svg>
+              </div>
+              <div>
+                <h4>Sistem Inventori Terintegrasi</h4>
+                <strong>100%</strong>
+                <p>Monitoring stok real-time untuk akurasi dan ketepatan data.</p>
+              </div>
+            </div>
+
+            <div class="about__warehouse-stat">
+              <div class="about__warehouse-stat-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="9" cy="8" r="3.2"></circle>
+                  <path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"></path>
+                  <path d="M16 9a3 3 0 100-6M22 20c0-2.8-1.9-5-4.5-5.7"></path>
+                </svg>
+              </div>
+              <div>
+                <h4>Tim Gudang Profesional</h4>
+                <strong>20+</strong>
+                <p>Didukung tim berpengalaman yang bekerja sesuai SOP.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__warehouse-image-col">
+          <div class="about__warehouse-image-wrap">
+            <img src="assets/img/about/gudang2.png" alt="Gudang CV. Gunung Mas 138" class="about__warehouse-img">
+            <div class="about__warehouse-overlay">
+
+              <div class="about__warehouse-point">
+                <span class="about__warehouse-point-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 12l2 2 4-4"></path>
+                    <circle cx="12" cy="12" r="9"></circle>
+                  </svg>
+                </span>
+                <h5>Kualitas Product Terjamin</h5>
+                <p>Produk dari brand terpercaya disimpan dan dijaga dengan
+                  standar kualitas terbaik.</p>
+              </div>
+
+              <div class="about__warehouse-point">
+                <span class="about__warehouse-point-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 8l-9-5-9 5 9 5 9-5zM3 8v8l9 5 9-5V8"></path>
+                  </svg>
+                </span>
+                <h5>Stock Aman</h5>
+                <p>Ketersediaan stok terjaga setiap saat untuk memastikan
+                  kebutuhan bisnis Anda terpenuhi.</p>
+              </div>
+
+              <div class="about__warehouse-point">
+                <span class="about__warehouse-point-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="6" y="4" width="12" height="16" rx="2"></rect>
+                    <path d="M9 4h6a1 1 0 011 1v1H8V5a1 1 0 011-1zM9 11h6M9 15h4"></path>
+                  </svg>
+                </span>
+                <h5>Penempatan Barang Sesuai SOP</h5>
+                <p>Setiap proses penyimpanan dan penataan barang mengikuti
+                  <strong>Standar Operasional Prosedur</strong> yang ketat.</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<!-- ============ PRINCIPAL KAMI + TESTIMONI (GABUNGAN) ============ -->
+<!-- ============ PRINCIPAL KAMI + TESTIMONI (GABUNGAN) ============ -->
+<section class="ptm-section" id="principal">
+
+  <div class="ptm-grid">
+
+    <!-- KIRI: PRINCIPAL -->
+    <div class="ptm-col">
+      <div class="ptm-col-head" data-reveal-scroll>
+        <span class="eyebrow">◆ Principal Kami ◆</span>
+        <h2>Bersinergi dengan <span class="text-accent">Brand Terbaik</span></h2>
+        <div class="ptm-underline"></div>
+        <p class="ptm-desc">
+          Kami bekerja sama dengan berbagai brand terkemuka untuk menghadirkan
+          kualitas terbaik bagi Anda.
+        </p>
+      </div>
+
+      <div class="ptm-logo-grid" id="principalLogoGrid">
+        <!-- diisi otomatis oleh JS, 8 logo per halaman -->
+      </div>
+      <div class="ptm-photo-nav">
+        <button class="ptm-photo-nav__btn" id="principalLogoPrev" aria-label="Logo sebelumnya">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M15 5l-7 7 7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="ptm-photo-dots" id="principalLogoDots"></div>
+        <button class="ptm-photo-nav__btn" id="principalLogoNext" aria-label="Logo berikutnya">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+
+      <div class="ptm-photo-grid" id="ownerPhotoGrid">
+        <!-- diisi otomatis oleh JS, 6 foto per halaman -->
+      </div>
+      <div class="ptm-photo-nav">
+        <button class="ptm-photo-nav__btn" id="ownerPhotoPrev" aria-label="Foto sebelumnya">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M15 5l-7 7 7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="ptm-photo-dots" id="ownerPhotoDots"></div>
+        <button class="ptm-photo-nav__btn" id="ownerPhotoNext" aria-label="Foto berikutnya">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="ptm-divider" aria-hidden="true"></div>
+
+    <!-- KANAN: TESTIMONI -->
+    <div class="ptm-col" id="testimoni">
+      <div class="ptm-col-head ptm-col-head--testimoni" data-reveal-scroll>
+        <div>
+          <span class="testimonials__mountain-icon" aria-hidden="true">
+            <svg width="40" height="24" viewBox="0 0 40 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20l8-14 6 8 4-5 6 11"/></svg>
+          </span>
+          <span class="eyebrow">◆ Apa Kata Mereka ◆</span>
+          <h2>Dipercaya <span class="text-accent">Pelanggan Kami</span></h2>
+          <p class="testimonials__subtitle">Kepuasan pelanggan adalah prioritas kami. Lihat apa yang mereka katakan tentang layanan kami.</p>
+        </div>
+        <div class="testimonials__rating">
+          <span class="testimonials__rating-num">4.9</span>
+          <div class="testimonials__rating-stars-col">
+            <div class="testimonials__stars">★★★★★</div>
+            <span class="testimonials__rating-sub">115 Ulasan Google</span>
+          </div>
+          <div class="testimonials__rating-divider"></div>
+          <div class="testimonials__rating-google">
+            <svg width="28" height="28" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.4 0 6.4 1.2 8.8 3.5l6.5-6.5C35.3 2.6 30 0 24 0 14.6 0 6.5 5.4 2.6 13.2l7.6 5.9C12.1 13 17.6 9.5 24 9.5z"/><path fill="#4285F4" d="M46.5 24.5c0-1.6-.1-3.2-.4-4.7H24v9.1h12.7c-.5 3-2.2 5.5-4.7 7.2l7.3 5.7c4.3-4 6.8-9.8 6.8-17.3z"/><path fill="#FBBC05" d="M10.2 19.1c-.5 1.4-.7 3-.7 4.9s.3 3.4.7 4.9l-7.6 5.9C1 31.5 0 27.9 0 24s1-7.5 2.6-10.7l7.6 5.8z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.3-5.7c-2 1.4-4.7 2.3-8.6 2.3-6.4 0-11.9-4.3-13.8-10.1l-7.6 5.9C6.5 42.6 14.6 48 24 48z"/></svg>
+            <span class="testimonials__rating-sub">Rating dari<br>Google Review</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonials__grid">
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p>"Distributor Food Service di Tasikmalaya yg pelayanannya sangat memuaskan 👍"</p>
+          <div class="testimonial-card__author">
+            <span class="testimonial-card__avatar testimonial-card__avatar--navy">G</span>
+            <span class="testimonial-card__google-icon"><svg width="13" height="13" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.4 0 6.4 1.2 8.8 3.5l6.5-6.5C35.3 2.6 30 0 24 0 14.6 0 6.5 5.4 2.6 13.2l7.6 5.9C12.1 13 17.6 9.5 24 9.5z"/><path fill="#4285F4" d="M46.5 24.5c0-1.6-.1-3.2-.4-4.7H24v9.1h12.7c-.5 3-2.2 5.5-4.7 7.2l7.3 5.7c4.3-4 6.8-9.8 6.8-17.3z"/><path fill="#FBBC05" d="M10.2 19.1c-.5 1.4-.7 3-.7 4.9s.3 3.4.7 4.9l-7.6 5.9C1 31.5 0 27.9 0 24s1-7.5 2.6-10.7l7.6 5.8z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.3-5.7c-2 1.4-4.7 2.3-8.6 2.3-6.4 0-11.9-4.3-13.8-10.1l-7.6 5.9C6.5 42.6 14.6 48 24 48z"/></svg></span>
+            <span>Google Review</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p>"Pelayanan fast respon, produk juga bagus.. sales-nya ramah"</p>
+          <div class="testimonial-card__author">
+            <span class="testimonial-card__avatar testimonial-card__avatar--red">G</span>
+            <span class="testimonial-card__google-icon"><svg width="13" height="13" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.4 0 6.4 1.2 8.8 3.5l6.5-6.5C35.3 2.6 30 0 24 0 14.6 0 6.5 5.4 2.6 13.2l7.6 5.9C12.1 13 17.6 9.5 24 9.5z"/><path fill="#4285F4" d="M46.5 24.5c0-1.6-.1-3.2-.4-4.7H24v9.1h12.7c-.5 3-2.2 5.5-4.7 7.2l7.3 5.7c4.3-4 6.8-9.8 6.8-17.3z"/><path fill="#FBBC05" d="M10.2 19.1c-.5 1.4-.7 3-.7 4.9s.3 3.4.7 4.9l-7.6 5.9C1 31.5 0 27.9 0 24s1-7.5 2.6-10.7l7.6 5.8z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.3-5.7c-2 1.4-4.7 2.3-8.6 2.3-6.4 0-11.9-4.3-13.8-10.1l-7.6 5.9C6.5 42.6 14.6 48 24 48z"/></svg></span>
+            <span>Google Review</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p>"Salah satu supplier hotel yg punya service top markotop."</p>
+          <div class="testimonial-card__author">
+            <span class="testimonial-card__avatar testimonial-card__avatar--gold">n</span>
+            <span class="testimonial-card__google-icon"><svg width="13" height="13" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.4 0 6.4 1.2 8.8 3.5l6.5-6.5C35.3 2.6 30 0 24 0 14.6 0 6.5 5.4 2.6 13.2l7.6 5.9C12.1 13 17.6 9.5 24 9.5z"/><path fill="#4285F4" d="M46.5 24.5c0-1.6-.1-3.2-.4-4.7H24v9.1h12.7c-.5 3-2.2 5.5-4.7 7.2l7.3 5.7c4.3-4 6.8-9.8 6.8-17.3z"/><path fill="#FBBC05" d="M10.2 19.1c-.5 1.4-.7 3-.7 4.9s.3 3.4.7 4.9l-7.6 5.9C1 31.5 0 27.9 0 24s1-7.5 2.6-10.7l7.6 5.8z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.3-5.7c-2 1.4-4.7 2.3-8.6 2.3-6.4 0-11.9-4.3-13.8-10.1l-7.6 5.9C6.5 42.6 14.6 48 24 48z"/></svg></span>
+            <span>Google Review</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p>"Harga bersahabat dan punya great teams"</p>
+          <div class="testimonial-card__author">
+            <span class="testimonial-card__avatar testimonial-card__avatar--navy">G</span>
+            <span class="testimonial-card__google-icon"><svg width="13" height="13" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.4 0 6.4 1.2 8.8 3.5l6.5-6.5C35.3 2.6 30 0 24 0 14.6 0 6.5 5.4 2.6 13.2l7.6 5.9C12.1 13 17.6 9.5 24 9.5z"/><path fill="#4285F4" d="M46.5 24.5c0-1.6-.1-3.2-.4-4.7H24v9.1h12.7c-.5 3-2.2 5.5-4.7 7.2l7.3 5.7c4.3-4 6.8-9.8 6.8-17.3z"/><path fill="#FBBC05" d="M10.2 19.1c-.5 1.4-.7 3-.7 4.9s.3 3.4.7 4.9l-7.6 5.9C1 31.5 0 27.9 0 24s1-7.5 2.6-10.7l7.6 5.8z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.3-5.7c-2 1.4-4.7 2.3-8.6 2.3-6.4 0-11.9-4.3-13.8-10.1l-7.6 5.9C6.5 42.6 14.6 48 24 48z"/></svg></span>
+            <span>Goodyear Handoko</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p>"Harganya murah kualitas okkkk!"</p>
+          <div class="testimonial-card__author">
+            <span class="testimonial-card__avatar testimonial-card__avatar--red">W</span>
+            <span class="testimonial-card__google-icon"><svg width="13" height="13" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.4 0 6.4 1.2 8.8 3.5l6.5-6.5C35.3 2.6 30 0 24 0 14.6 0 6.5 5.4 2.6 13.2l7.6 5.9C12.1 13 17.6 9.5 24 9.5z"/><path fill="#4285F4" d="M46.5 24.5c0-1.6-.1-3.2-.4-4.7H24v9.1h12.7c-.5 3-2.2 5.5-4.7 7.2l7.3 5.7c4.3-4 6.8-9.8 6.8-17.3z"/><path fill="#FBBC05" d="M10.2 19.1c-.5 1.4-.7 3-.7 4.9s.3 3.4.7 4.9l-7.6 5.9C1 31.5 0 27.9 0 24s1-7.5 2.6-10.7l7.6 5.8z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.3-5.7c-2 1.4-4.7 2.3-8.6 2.3-6.4 0-11.9-4.3-13.8-10.1l-7.6 5.9C6.5 42.6 14.6 48 24 48z"/></svg></span>
+            <span>Wiryanto Yung</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p>"Sales ramah, pengiriman cepat, sukses selalu 🙏"</p>
+          <div class="testimonial-card__author">
+            <span class="testimonial-card__avatar testimonial-card__avatar--gold">E</span>
+            <span class="testimonial-card__google-icon"><svg width="13" height="13" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.4 0 6.4 1.2 8.8 3.5l6.5-6.5C35.3 2.6 30 0 24 0 14.6 0 6.5 5.4 2.6 13.2l7.6 5.9C12.1 13 17.6 9.5 24 9.5z"/><path fill="#4285F4" d="M46.5 24.5c0-1.6-.1-3.2-.4-4.7H24v9.1h12.7c-.5 3-2.2 5.5-4.7 7.2l7.3 5.7c4.3-4 6.8-9.8 6.8-17.3z"/><path fill="#FBBC05" d="M10.2 19.1c-.5 1.4-.7 3-.7 4.9s.3 3.4.7 4.9l-7.6 5.9C1 31.5 0 27.9 0 24s1-7.5 2.6-10.7l7.6 5.8z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.3-5.7c-2 1.4-4.7 2.3-8.6 2.3-6.4 0-11.9-4.3-13.8-10.1l-7.6 5.9C6.5 42.6 14.6 48 24 48z"/></svg></span>
+            <span>Google Review</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+  
+
+  
+
+  <!-- ============ CARA ORDER ============ -->
+<!-- ============ CARA ORDER ============ -->
+<section class="cara-order" id="cara-order" data-reveal-scroll>
+
+  <div class="cara-order__layout">
+
+    <div class="cara-order__photo-col">
+      <div class="cara-order__bubble">
+        <span class="cara-order__bubble-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
+          </svg>
+        </span>
+        <p>Belanja kebutuhan bisnis jadi lebih <strong>mudah, cepat,</strong> <strong>dan terpercaya</strong> bersama kami!</p>
+      </div>
+      <img src="assets/img/cara-order-maskot.png" alt="Staff CV. Gunung Mas 138" class="cara-order__photo" />
+    </div>
+
+    <div class="cara-order__content">
+      <div class="cara-order__head">
+        <span class="eyebrow">◆ Cara Order</span>
+        <h2>Belanja Jadi <span class="text-accent">Gampang</span></h2>
+        <p>Cukup 3 langkah, produk kebutuhan bisnis Anda siap dikirim.</p>
+      </div>
+
+      <div class="cara-order__badges">
+        <div class="cara-order__badge">
+          <span class="cara-order__badge-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+          </span>
+          <span class="cara-order__badge-label">Mudah</span>
+        </div>
+        <div class="cara-order__badge">
+          <span class="cara-order__badge-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 11-14h-7l1-6z"/></svg>
+          </span>
+          <span class="cara-order__badge-label">Cepat</span>
+        </div>
+        <div class="cara-order__badge">
+          <span class="cara-order__badge-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/></svg>
+          </span>
+          <span class="cara-order__badge-label">Terpercaya</span>
+        </div>
+        <div class="cara-order__badge">
+          <span class="cara-order__badge-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+          </span>
+          <span class="cara-order__badge-label">Bersama Kami</span>
+        </div>
+      </div>
+
+      <div class="cara-order__steps">
+        <div class="cara-order__step">
+          <div class="cara-order__step-icon-wrap cara-order__step-icon-wrap--blue">
+            <div class="cara-order__step-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 2l1.5 4h9L18 2M4 6h16l-1.5 14a2 2 0 01-2 2H7.5a2 2 0 01-2-2L4 6z"/>
+              </svg>
+            </div>
+          </div>
+          <span class="cara-order__step-num">01</span>
+          <h3>Pilih Produk</h3>
+          <p>Lihat katalog produk kami dan pilih sesuai kebutuhan bisnis Anda.</p>
+          <span class="cara-order__step-chevron" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+          </span>
+        </div>
+
+        <span class="cara-order__arrow" aria-hidden="true">
+          <svg width="24" height="12" viewBox="0 0 24 12" fill="none"><path d="M1 6h20M16 1l6 5-6 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+
+        <div class="cara-order__step">
+          <div class="cara-order__step-icon-wrap cara-order__step-icon-wrap--red">
+            <div class="cara-order__step-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/>
+              </svg>
+            </div>
+          </div>
+          <span class="cara-order__step-num">02</span>
+          <h3>Chat via WhatsApp</h3>
+          <p>Hubungi sales kami untuk tanya harga, stok, dan detail produk.</p>
+          <span class="cara-order__step-chevron" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+          </span>
+        </div>
+
+        <span class="cara-order__arrow" aria-hidden="true">
+          <svg width="24" height="12" viewBox="0 0 24 12" fill="none"><path d="M1 6h20M16 1l6 5-6 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+
+        <div class="cara-order__step">
+          <div class="cara-order__step-icon-wrap cara-order__step-icon-wrap--blue">
+            <div class="cara-order__step-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 16V6a1 1 0 011-1h9a1 1 0 011 1v10M3 16h11M14 8h3l2.7 3.4c.2.2.3.5.3.8V16h-1M14 16a2 2 0 104 0M6 16a2 2 0 104 0"/>
+              </svg>
+            </div>
+          </div>
+          <span class="cara-order__step-num">03</span>
+          <h3>Konfirmasi & Kirim</h3>
+          <p>Kami konfirmasi pesanan Anda dan segera proses pengiriman.</p>
+          <span class="cara-order__step-chevron" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+          </span>
+        </div>
+      </div>
+
+   <div class="cara-order__payment">
+        <h4>Metode Pembayaran</h4>
+
+        <!-- 8 metode: Tunai, Transfer, Kartu Kredit, Cek/Giro, ShopeePay, GoPay, DANA, QRIS -->
+<div class="cara-order__payment-grid">
+  <div class="cara-order__payment-item cara-order__payment-item--cash">
+    <svg class="cara-order__payment-wave" viewBox="0 0 200 60" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,30 C40,10 60,50 100,30 C140,10 160,50 200,30 L200,60 L0,60 Z" fill="currentColor" opacity="0.35"/>
+      <path d="M0,40 C40,22 60,54 100,40 C140,26 160,54 200,40 L200,60 L0,60 Z" fill="currentColor" opacity="0.55"/>
+    </svg>
+    <div class="cara-order__payment-content">
+      <span class="cara-order__payment-bank">💵 Tunai</span>
+      <span class="cara-order__payment-name">Bayar langsung ke sales/kurir kami</span>
+    </div>
+  </div>
+
+  <div class="cara-order__payment-item cara-order__payment-item--transfer">
+    <svg class="cara-order__payment-wave" viewBox="0 0 200 60" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,30 C40,10 60,50 100,30 C140,10 160,50 200,30 L200,60 L0,60 Z" fill="currentColor" opacity="0.35"/>
+      <path d="M0,40 C40,22 60,54 100,40 C140,26 160,54 200,40 L200,60 L0,60 Z" fill="currentColor" opacity="0.55"/>
+    </svg>
+    <div class="cara-order__payment-content">
+      <span class="cara-order__payment-bank">🏦 Transfer</span>
+      <span class="cara-order__payment-name">Ke rekening resmi CV Gunung Mas 138</span>
+    </div>
+  </div>
+
+  <div class="cara-order__payment-item cara-order__payment-item--credit">
+    <svg class="cara-order__payment-wave" viewBox="0 0 200 60" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,30 C40,10 60,50 100,30 C140,10 160,50 200,30 L200,60 L0,60 Z" fill="currentColor" opacity="0.35"/>
+      <path d="M0,40 C40,22 60,54 100,40 C140,26 160,54 200,40 L200,60 L0,60 Z" fill="currentColor" opacity="0.55"/>
+    </svg>
+    <div class="cara-order__payment-content">
+      <span class="cara-order__payment-bank">💳 Kartu Kredit</span>
+      <span class="cara-order__payment-name">Pembayaran via Paper Id</span>
+    </div>
+  </div>
+
+  <div class="cara-order__payment-item cara-order__payment-item--giro">
+    <svg class="cara-order__payment-wave" viewBox="0 0 200 60" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,30 C40,10 60,50 100,30 C140,10 160,50 200,30 L200,60 L0,60 Z" fill="currentColor" opacity="0.35"/>
+      <path d="M0,40 C40,22 60,54 100,40 C140,26 160,54 200,40 L200,60 L0,60 Z" fill="currentColor" opacity="0.55"/>
+    </svg>
+    <div class="cara-order__payment-content">
+      <span class="cara-order__payment-bank">🧾 Cek/Giro</span>
+      <span class="cara-order__payment-name">Untuk transaksi bisnis skala besar</span>
+    </div>
+  </div>
+
+  <div class="cara-order__payment-item cara-order__payment-item--shopeepay">
+    <svg class="cara-order__payment-wave" viewBox="0 0 200 60" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,30 C40,10 60,50 100,30 C140,10 160,50 200,30 L200,60 L0,60 Z" fill="currentColor" opacity="0.35"/>
+      <path d="M0,40 C40,22 60,54 100,40 C140,26 160,54 200,40 L200,60 L0,60 Z" fill="currentColor" opacity="0.55"/>
+    </svg>
+    <div class="cara-order__payment-content">
+      <img src="assets/img/payment/shopeepay.png" alt="ShopeePay" class="cara-order__payment-logo" />
+      <span class="cara-order__payment-bank">ShopeePay</span>
+      <span class="cara-order__payment-name">Bayar lewat aplikasi Shopee</span>
+    </div>
+  </div>
+
+  <div class="cara-order__payment-item cara-order__payment-item--gopay">
+    <svg class="cara-order__payment-wave" viewBox="0 0 200 60" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,30 C40,10 60,50 100,30 C140,10 160,50 200,30 L200,60 L0,60 Z" fill="currentColor" opacity="0.35"/>
+      <path d="M0,40 C40,22 60,54 100,40 C140,26 160,54 200,40 L200,60 L0,60 Z" fill="currentColor" opacity="0.55"/>
+    </svg>
+    <div class="cara-order__payment-content">
+      <img src="assets/img/payment/gopay.png" alt="GoPay" class="cara-order__payment-logo" />
+      <span class="cara-order__payment-bank">GoPay</span>
+      <span class="cara-order__payment-name">Bayar lewat aplikasi Gojek</span>
+    </div>
+  </div>
+
+  <div class="cara-order__payment-item cara-order__payment-item--dana">
+    <svg class="cara-order__payment-wave" viewBox="0 0 200 60" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,30 C40,10 60,50 100,30 C140,10 160,50 200,30 L200,60 L0,60 Z" fill="currentColor" opacity="0.35"/>
+      <path d="M0,40 C40,22 60,54 100,40 C140,26 160,54 200,40 L200,60 L0,60 Z" fill="currentColor" opacity="0.55"/>
+    </svg>
+    <div class="cara-order__payment-content">
+      <img src="assets/img/payment/dana.png" alt="DANA" class="cara-order__payment-logo" />
+      <span class="cara-order__payment-bank">DANA</span>
+      <span class="cara-order__payment-name">Bayar lewat aplikasi DANA</span>
+    </div>
+  </div>
+
+  <div class="cara-order__payment-item cara-order__payment-item--qris">
+    <svg class="cara-order__payment-wave" viewBox="0 0 200 60" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,30 C40,10 60,50 100,30 C140,10 160,50 200,30 L200,60 L0,60 Z" fill="currentColor" opacity="0.35"/>
+      <path d="M0,40 C40,22 60,54 100,40 C140,26 160,54 200,40 L200,60 L0,60 Z" fill="currentColor" opacity="0.55"/>
+    </svg>
+    <div class="cara-order__payment-content">
+      <span class="cara-order__payment-bank">📱 QRIS</span>
+      <span class="cara-order__payment-name">Scan QR, bisa pakai e-wallet apa saja</span>
+    </div>
+  </div>
+</div>
+<p class="cara-order__payment-terms">*Syarat dan ketentuan berlaku</p>
+      </div>
+
+      <div class="cara-order__infocard">
+        <div class="cara-order__infocard-left">
+          <span class="cara-order__infocard-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/>
+            </svg>
+          </span>
+          <div>
+            <h4>Aman, Cepat &amp; Terpercaya</h4>
+            <p>Ribuan bisnis sudah percaya berbelanja bersama kami.</p>
+          </div>
+        </div>
+        <div class="cara-order__infocard-divider"></div>
+        <div class="cara-order__infocard-actions">
+          <a href="produk.html" class="btn btn-outline">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20M4 19.5A2.5 2.5 0 006.5 22H20V2H6.5A2.5 2.5 0 004 4.5v15z"/></svg>
+            Lihat Katalog Produk
+          </a>
+          <a href="https://wa.me/6289603988885?text=Halo%2C%20saya%20mau%20tanya%20produk" target="_blank" rel="noopener" class="btn btn-primary cara-order__wa-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.07-1.33C8.51 21.5 10.2 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
+            Chat via WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="cara-order__trust">
+        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="blue" stroke="blue" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/></svg> Data aman</span>
+        <span class="cara-order__trust-dot">·</span>
+        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="gold" stroke="gold" stroke-width="2"><path d="M13 2L3 14h7l-1 8 11-14h-7l1-6z"/></svg> Respon cepat</span>
+        <span class="cara-order__trust-dot">·</span>
+        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="red" stroke="red" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/></svg> Pengiriman terpercaya</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+  <!-- ============ CTA STRIP ============ -->
+  <section class="cta-strip">
+    <div class="container cta-strip__inner" data-reveal-scroll>
+      <div>
+        <span class="eyebrow eyebrow--light">◆ Mulai Sekarang</span>
+        <h2>Siap Jadi Mitra Distribusi Kami?</h2>
+        <p>Hubungi tim kami untuk info produk, harga, dan kerja sama distribusi.</p>
+      </div>
+      <a href="kontak.html" class="btn btn-primary cta-strip__btn">
+        Hubungi Kami
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.3 2.6 3.4 4.7 6 6l2-2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.9c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.2 1l-2 2.3z" fill="currentColor"/></svg>
+      </a>
+    </div>
+  </section>
+
+ 
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <div class="footer__brand-row">
+          <img src="assets/img/logo.jpeg" alt="Logo CV. Gunung Mas 138" class="footer__logo" />
+          <span class="footer__brand-text">CV. GUNUNG MAS <span>138</span></span>
+        </div>
+        <p class="footer__desc">
+          Distributor kebutuhan pokok &amp; bahan baku, menyalurkan ke mitra
+          usaha dengan armada dan tim yang siap bergerak setiap hari.
+        </p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Navigasi</h4>
+        <ul>
+          <li><a href="#hero">Beranda</a></li>
+          <li><a href="tentang.html">Tentang Kami</a></li>
+          <li><a href="produk.html">Produk</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Kontak</h4>
+        <ul>
+          <!-- TODO: ganti dengan data asli -->
+          <li>Tasikmalaya,Linggajaya, Kec. Mangkubumi, Kota Tasikmalaya, Jawa Barat 46181</li>
+          <li>+62-8896-1000-0138</li>
+          <li>gunungmas138@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <span>© <span id="footerYear"></span> CV. Gunung Mas 138. Semua hak dilindungi.</span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    /* Toggle menu mobile (hamburger) — markup & CSS udah ada, JS-nya belum pernah dibuat */
+    document.addEventListener("DOMContentLoaded", () => {
+      const navbar = document.getElementById("navbar");
+      const panel = document.getElementById("navMobilePanel");
+      const burger = document.getElementById("navBurger");
+      if (!navbar || !burger || !panel) return;
+
+      burger.addEventListener("click", () => {
+        navbar.classList.toggle("is-open");
+      });
+
+      // Tutup menu otomatis kalau salah satu link di dalamnya diklik
+      panel.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => navbar.classList.remove("is-open"));
+      });
+
+      // Tutup menu kalau klik di luar navbar
+      document.addEventListener("click", (e) => {
+        if (!navbar.contains(e.target)) navbar.classList.remove("is-open");
+      });
+    });
+  </script>
+  <script>
+    /* ============================================================
+   14. Slide-reveal untuk 3 section pindahan dari Tentang Kami
+   (Intro/Siapa Kami, Kualitas & Pengiriman, Gudang Terpusat)
+   Pola sama seperti reveal Company Journey di atas: ScrollTrigger
+   + onEnter + once:true, bukan IntersectionObserver manual.
+   ============================================================ */
+document.addEventListener("DOMContentLoaded", () => {
+  if (typeof gsap === "undefined" || typeof ScrollTrigger === "undefined") return;
+
+  const isMobileLayout = window.matchMedia("(max-width: 900px)").matches;
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  function slideRevealPair(triggerSelector, textSelector, imageSelector, textFromLeft) {
+    const triggerEl = document.querySelector(triggerSelector);
+    if (!triggerEl) return;
+
+    if (prefersReducedMotion) return; // biarkan tampil normal tanpa animasi
+
+    // Di mobile, textSelector (.about__*-content-col) di-set display:contents
+    // (trik CSS buat reorder kartu vs foto) -- opacity/transform GSAP nggak
+    // pernah kerender di elemen display:contents, jadi animasi dual slide
+    // di bawah ini SENGAJA di-skip di mobile, diganti fade sederhana di
+    // trigger-nya sendiri (yang bukan display:contents, aman dianimasikan).
+    if (isMobileLayout) {
+      gsap.set(triggerEl, { opacity: 0, y: 24 });
+      ScrollTrigger.create({
+        trigger: triggerEl,
+        start: "top 85%",
+        once: true,
+        onEnter: () => {
+          gsap.to(triggerEl, { opacity: 1, y: 0, duration: 1, ease: "power3.out" });
+        },
+      });
+      return;
+    }
+
+    const textEl = document.querySelector(textSelector);
+    const imageEl = document.querySelector(imageSelector);
+    if (!textEl || !imageEl) return;
+
+    gsap.set(textEl, { opacity: 0, x: textFromLeft ? -40 : 40 });
+    gsap.set(imageEl, { opacity: 0, x: textFromLeft ? 40 : -40 });
+
+    ScrollTrigger.create({
+      trigger: triggerEl,
+      start: "top 75%",
+      once: true,
+      onEnter: () => {
+        gsap.to(textEl, { opacity: 1, x: 0, duration: 1.1, ease: "power3.out" });
+        gsap.to(imageEl, { opacity: 1, x: 0, duration: 1.1, ease: "power3.out", delay: 0.15 });
+      },
+    });
+  }
+
+  // Intro "Siapa Kami": teks kiri, foto kanan
+  slideRevealPair(".about__intro-grid", ".about__intro-content-col", ".about__intro-image-col", true);
+
+  // Kualitas & Pengiriman: foto kiri, teks kanan (teks tetap yang "memimpin" animasi)
+  slideRevealPair(".about__quality-grid", ".about__quality-content-col", ".about__quality-image-col", false);
+
+  // Gudang Terpusat: teks kiri, foto kanan
+  slideRevealPair(".about__warehouse-grid", ".about__warehouse-content-col", ".about__warehouse-image-col", true);
+});
+
+
+  </script>
+  <!-- setelah main.js -->
+  <script src="js/principal-slider.js"></script>
+
+</body>
+</html>

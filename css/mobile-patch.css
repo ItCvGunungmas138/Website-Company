@@ -1,0 +1,1084 @@
+/* ============================================================
+   MOBILE PATCH — CV. Gunung Mas 138
+   Link file ini SETELAH style.css di index.html:
+   <link rel="stylesheet" href="css/mobile-patch.css" />
+   Semua rule di sini hanya menimpa untuk layar kecil,
+   style.css utama tidak perlu diubah.
+   ============================================================ */
+
+/* ---------- FIX 100vh di browser HP ---------- */
+@supports (min-height: 100svh) {
+  .hero { min-height: calc(85svh - 2.5rem); }
+}
+
+/* ---------- Navbar full-width di mobile ----------
+   Base style.css sengaja kasih margin kiri-kanan buat efek "pill ngambang"
+   di desktop (clamp 1rem-2.25rem), tapi itu nggak pernah ditimpa buat HP,
+   jadinya navbar keliatan "bocor"/nggak nempel ke tepi layar. */
+@media (max-width: 900px) {
+  .navbar {
+    left: 0;
+    right: 0;
+    border-radius: 0 0 18px 18px;
+  }
+}
+
+/* ============================================================
+   MENU MOBILE (panel dropdown dari navbar)
+   ============================================================ */
+.navbar__mobile-panel {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .navbar__mobile-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    
+    height: 0;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: height 0.35s var(--ease-out), max-height 0.35s var(--ease-out), opacity 0.25s var(--ease-out), padding 0.35s var(--ease-out);
+  }
+
+  .navbar.is-open { border-radius: 22px; }
+  .navbar.is-open .navbar__mobile-panel {
+    height: auto;
+    max-height: 420px;
+    opacity: 1;
+  }
+  
+
+  .navbar__mobile-link {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-navy-700);
+    padding: 0.7rem 0.25rem;
+    border-bottom: 1px solid var(--color-stone-100);
+  }
+  .navbar__mobile-link:last-of-type { border-bottom: none; }
+  .navbar__mobile-link--soon { opacity: 0.35; pointer-events: none; }
+  .navbar__mobile-link--active { color: var(--color-red-600); font-weight: 800; }
+
+  .navbar__mobile-cta {
+    margin-top: 0.6rem;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navbar__burger span { transition: transform 0.3s var(--ease-out), opacity 0.2s; }
+  .navbar.is-open .navbar__burger span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .navbar.is-open .navbar__burger span:nth-child(2) { opacity: 0; }
+  .navbar.is-open .navbar__burger span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+}
+
+/* ============================================================
+   HERO — layar kecil (SATU-SATUNYA blok hero, versi final)
+   ============================================================ */
+@media (max-width: 900px) {
+  .hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    aspect-ratio: 4 / 5; /* skala tinggi hero ngikutin lebar HP, bukan angka px tetap */
+    min-height: unset;
+    margin-top: 0; /* base style.css punya margin-top 1.25rem, nyisain spasi kosong di HP */
+    margin-inline: 0.75rem;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+.hero__video {
+    display: none;
+  }
+
+  .hero__media {
+    background-image: url("../assets/img/hero/heroresponsive.jpeg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .hero__content {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    padding: 6rem 1.25rem 0;
+    max-width: 100%;
+  }
+
+  .hero__title,
+  .hero__title_2 {
+    max-width: 100%;
+    font-size: 1.35rem;
+    line-height: 1.25;
+  }
+
+  .hero__desc {
+    display: none; /* referensi no.2 nggak nampilin paragraf desc */
+  }
+
+  /* Tombol balik ke flow normal, nempel langsung di bawah judul (bukan absolute-bottom lagi) */
+  .hero__actions {
+    position: relative;
+    flex-direction: row;
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+  }
+  .hero__actions .btn {
+    flex: 1;
+    justify-content: center;
+    font-size: 0.75rem;
+    padding: 0.65em 0.9em;
+  }
+}
+
+/* ============================================================
+   STATS BAR — layar kecil
+   ============================================================ */
+@media (max-width: 620px) {
+  .stats-bar {
+    margin-inline: 0.75rem;
+    margin-top: -3rem; /* efek floating card, numpuk ke ujung bawah foto hero */
+    position: relative;
+    z-index: 2;
+  }
+  .stats-bar__inner {
+    display: grid !important;
+    grid-template-columns: repeat(5, 1fr) !important;
+    border-radius: 16px;
+    padding: 0.9rem 0.5rem;
+    gap: 0.5rem 0.35rem;
+  }
+  .stats-bar__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.2rem;
+  }
+  .stats-bar__number { font-size: 0.95rem; }
+  .stats-bar__label { font-size: 0.6rem; line-height: 1.15; }
+  .stats-bar__icon { width: 28px; height: 28px; }
+  .stats-bar__sub { display: none; }
+}
+/* ============================================================
+   SECTION WRAPPER — margin & radius dikecilkan di HP
+   ============================================================ */
+@media (max-width: 620px) {
+  .brands, .products, .values, .contact, .cta-strip, .footer {
+    margin-inline: 0.75rem;
+    border-radius: 20px;
+  }
+  .container { padding-inline: 1rem; }
+}
+
+/* ============================================================
+   PRODUK — tab & tombol
+   ============================================================ */
+@media (max-width: 620px) {
+  .products__head { gap: 0.75rem; }
+  .products__head .btn { width: 100%; justify-content: center; }
+  .products__tabs { gap: 1.1rem; }
+  .products__tab { padding-block: 0.6rem 0.85rem; }
+}
+
+/* ============================================================
+   KONTAK — kartu & peta
+   ============================================================ */
+@media (max-width: 620px) {
+  .contact__map { min-height: 260px; }
+  .contact__card { padding: 0.8rem 0.9rem; }
+}
+
+/* ============================================================
+   CTA STRIP & FOOTER
+   ============================================================ */
+@media (max-width: 620px) {
+  .cta-strip__btn { width: 100%; justify-content: center; }
+  .footer__bottom { text-align: center; }
+}
+
+/* ============================================================
+   PERFORMA HP: matikan efek berat yang nggak kepakai di touch
+   ============================================================ */
+@media (max-width: 900px) {
+  .hero__particles { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__particles { display: none; }
+}
+
+/* ============================================================
+   KEUNGGULAN KAMI — foto kiri, teks kanan (khusus mobile)
+   ============================================================ */
+@media (max-width: 900px) {
+  .keunggulan__stats {
+    display: none;
+  }
+
+  .keunggulan__grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: 0.75rem;
+    gap: 1rem;
+    padding-bottom: 0.5rem; /* ruang biar border/shadow card kelihatan pas discroll */
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .keunggulan__grid::-webkit-scrollbar { display: none; }
+
+  .keunggulan__card {
+    flex: 0 0 85%;
+    scroll-snap-align: start;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background: var(--color-white);
+    border: 1px solid var(--color-stone-200);
+  }
+
+  .keunggulan__card-media {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    flex-shrink: 0;
+    aspect-ratio: 16 / 10;
+  }
+
+  .keunggulan__card-overlay {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    background: none;
+    color: var(--color-navy-900);
+    padding: 1rem 1.1rem;
+    justify-content: center;
+  }
+
+  .keunggulan__number {
+    display: inline-block;
+    background: var(--color-navy-700);
+    color: var(--color-white);
+    width: fit-content;
+    padding: 0.25em 0.75em;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .keunggulan__card-overlay h3 {
+    color: var(--color-navy-900);
+    font-size: 0.95rem;
+  }
+
+  .keunggulan__card-overlay p {
+    color: var(--color-stone-600);
+    font-size: 0.75rem;
+  }
+
+  .keunggulan__card-overlay h5 {
+    color: var(--color-gold-500);
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .keunggulan__card-overlay h5::before {
+    content: "✓";
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--color-gold-500);
+    color: var(--color-white);
+    font-size: 0.6rem;
+    flex-shrink: 0;
+  }
+}
+
+/* ============================================================
+   TESTIMONI — 3 card per halaman, sisanya slide horizontal
+   ============================================================ */
+@media (max-width: 900px) {
+  .testimonials__grid {
+    display: grid !important;
+    grid-template-columns: none !important;
+    grid-auto-flow: column !important;
+    grid-template-rows: repeat(3, auto) !important;
+    grid-auto-columns: 100% !important;
+    column-gap: 1rem;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: 0.75rem;
+    padding-bottom: 0.5rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .testimonials__grid::-webkit-scrollbar { display: none; }
+
+  .testimonial-card {
+    scroll-snap-align: start;
+  }
+  .testimonial-card__author {
+    grid-area: google;
+    display: flex !important;
+    align-items: center;
+    gap: 0.35rem;
+    margin-top: 0;
+  }
+  .testimonial-card__author span:not(.testimonial-card__avatar) {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.68rem;
+    color: var(--color-stone-600);
+  }
+  .testimonial-card__google-icon {
+    display: block;
+  }
+  .testimonial-card__google-icon svg {
+    display: block;
+  }
+  .testimonial-card__avatar {
+    grid-area: avatar;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 40px !important;
+    height: 40px !important;
+    min-width: 40px;
+    border-radius: 50% !important;
+    color: var(--color-white) !important;
+    font-weight: 700;
+    font-size: 1rem;
+    flex-shrink: 0;
+  }
+  .testimonial-card__avatar--navy { background: var(--color-navy-700) !important; }
+  .testimonial-card__avatar--red { background: var(--color-red-500) !important; }
+  .testimonial-card__avatar--gold { background: var(--color-gold-500) !important; }
+}
+
+/* ============================================================
+   LAYANAN KAMI (Kualitas & Pengiriman) — judul → foto → strip gelap → 2 kartu fitur
+   ============================================================ */
+@media (max-width: 900px) {
+  .about__quality-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about__quality-content-col {
+    display: contents; /* biar .about__quality-features di dalamnya ikut ke-order langsung */
+  }
+
+  .about__quality-text {
+    display: none; /* simplifikasi, referensi cuma nampilin judul */
+  }
+
+  .about__quality-image-col {
+    order: 2;
+    margin-top: 1.25rem;
+  }
+
+  .about__quality-img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Badge yang tadinya numpuk transparan di atas foto -> jadi strip gelap solid di bawah foto */
+  .about__quality-badges {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    background: var(--color-navy-900);
+    border-radius: 0 0 16px 16px;
+    padding: 1rem 0.65rem;
+    gap: 0.5rem;
+  }
+  .about__quality-badge {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .about__quality-badge-icon {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    color: var(--color-white);
+    flex-shrink: 0;
+  }
+  .about__quality-badge-icon svg {
+    width: 14px;
+    height: 14px;
+  }
+  .about__quality-badge strong {
+    display: block;
+    color: var(--color-white);
+    font-size: 0.68rem;
+  }
+  .about__quality-badge > div span {
+    display: block;
+    color: var(--color-white);
+    font-size: 0.58rem;
+    line-height: 1.3;
+    opacity: 0.75;
+  }
+
+  .about__quality-features {
+    order: 3;
+    margin-top: 1.25rem;
+    display: flex;
+    gap: 0.75rem;
+  }
+  .about__quality-feature {
+    flex: 1;
+    text-align: center;
+  }
+
+  .about__quality-bottom-row {
+    display: none; /* nggak ada di referensi */
+  }
+}
+
+/* ============================================================
+   GUDANG TERPUSAT — judul+teks+4 stats di atas, foto+3 poin navy di bawah
+   ============================================================ */
+@media (max-width: 900px) {
+  .about__warehouse-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about__warehouse-content-col {
+    order: 1;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .about__warehouse-text {
+    display: none;
+  }
+
+  .about__warehouse-stats {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.25rem;
+    padding: 1rem 0.2rem;
+  }
+
+  .about__warehouse-stat {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+    text-align: center;
+    padding-inline: 0.15rem;
+  }
+  .about__warehouse-stat-icon {
+    margin-inline: auto;
+    width: 30px;
+    height: 30px;
+  }
+  .about__warehouse-stat-icon svg {
+    width: 16px;
+    height: 16px;
+  }
+  .about__warehouse-stat h4 {
+    font-size: 0.58rem;
+    line-height: 1.25;
+    margin-top: 0.35rem;
+    overflow-wrap: break-word;
+  }
+  .about__warehouse-stat strong {
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 0.2rem;
+  }
+  .about__warehouse-stat p {
+    display: none;
+  }
+
+  .about__warehouse-image-col {
+    order: 2;
+    margin-top: 1.5rem;
+    width: 100%;
+  }
+
+  .about__warehouse-img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* 3 poin: dari overlay nempel di foto -> jadi kartu navy solid di bawah foto */
+  .about__warehouse-overlay {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    background: var(--color-navy-900);
+    border-radius: 16px;
+    margin-top: 1rem;
+    padding: 1.1rem 0.6rem;
+    gap: 0.5rem;
+  }
+
+  .about__warehouse-point {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.4rem;
+  }
+
+  .about__warehouse-point-icon {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid currentColor;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .about__warehouse-point-icon svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .about__warehouse-point h5 {
+    color: var(--color-white);
+    font-size: 0.62rem;
+    line-height: 1.25;
+  }
+
+  .about__warehouse-point p {
+    color: var(--color-white);
+    opacity: 0.75;
+    font-size: 0.5rem;
+    line-height: 1.3;
+  }
+}
+
+/* Elemen baru (badge & chevron cara-order, mountain-icon & google testimoni) belum dikenal
+   style.css -> default disembunyikan, baru dimunculin khusus di breakpoint mobile di bawah */
+.cara-order__badges,
+.cara-order__step-chevron,
+.testimonials__mountain-icon,
+.testimonials__rating-divider,
+.testimonials__rating-google {
+  display: none;
+}
+
+/* Avatar + icon Google testimoni -- berlaku di SEMUA ukuran layar,
+   bukan cuma mobile (sebelumnya cuma didefinisiin di dalam @media,
+   jadi di desktop avatarnya nggak keliatan sama sekali) */
+.testimonial-card__author {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.testimonial-card__google-icon,
+.testimonial-card__google-icon svg {
+  display: block;
+}
+.testimonial-card__avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  border-radius: 50%;
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+.testimonial-card__avatar--navy { background: var(--color-navy-700); }
+.testimonial-card__avatar--red { background: var(--color-red-500); }
+.testimonial-card__avatar--gold { background: var(--color-gold-500); }
+
+/* Kartu testimoni: grid avatar-kiri + stars/quote/google-kanan, background
+   putih -- berlaku di SEMUA ukuran layar (sebelumnya cuma di dalam @media) */
+.testimonial-card {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  grid-template-areas:
+    "avatar stars"
+    "avatar quote"
+    "avatar google";
+  column-gap: 0.7rem;
+  row-gap: 0.3rem;
+  align-items: start;
+  background: var(--color-white);
+  border: 1px solid var(--color-stone-200);
+  border-radius: 14px;
+  padding: 0.9rem 1rem;
+}
+.testimonial-card__stars { grid-area: stars;color: gold; }
+.testimonial-card > p {
+  grid-area: quote;
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+.testimonial-card__author { grid-area: google; }
+.testimonial-card__avatar { grid-area: avatar; }
+
+/* Item pembayaran baru (Transfer/Debit/Giro) -- class ini nggak ada CSS-nya
+   di style.css, jadi didefinisikan lengkap sendiri di sini (bukan di dalam
+   media query, biar kepakai juga di desktop) */
+.cara-order__payment-item--transfer {
+  background: rgba(27, 37, 96, 0.06);
+  color: var(--color-navy-700);
+}
+.cara-order__payment-item--credit {
+  background: rgba(220, 38, 38, 0.06);
+  color: var(--color-red-600);
+}
+.cara-order__payment-item--giro {
+  background: rgba(201, 162, 39, 0.1);
+  color: var(--color-gold-500);
+}
+.cara-order__payment-item--shopeepay {
+  background: rgba(238, 77, 45, 0.08);
+  color: #ee4d2d;
+}
+.cara-order__payment-item--gopay {
+  background: rgba(0, 170, 91, 0.08);
+  color: #00aa5b;
+}
+.cara-order__payment-item--dana {
+  background: rgba(17, 142, 234, 0.08);
+  color: #118eea;
+}
+.cara-order__payment-item--qris {
+  background: rgba(123, 47, 247, 0.08);
+  color: #7b2ff7;
+}
+
+.cara-order__payment-terms {
+  margin-top: 0.6rem;
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  color: var(--color-stone-600);
+  font-style: italic;
+}
+
+/* Principal Kami — 4 kartu logo brand, belum ada CSS-nya di style.css */
+.ptm-logo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.85rem;
+}
+.ptm-logo-item {
+  aspect-ratio: 4 / 3;
+  background: var(--color-white);
+  border: 1px solid var(--color-stone-200);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem;
+  transition: transform var(--dur-fast) var(--ease-out), box-shadow var(--dur-fast) var(--ease-out);
+}
+.ptm-logo-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px -16px rgba(18,23,58,0.25);
+}
+.ptm-logo-item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+@media (max-width: 620px) {
+  .ptm-logo-grid { display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.85rem; }
+}
+
+/* ============================================================
+   PRINCIPAL KAMI + TESTIMONI — stack 1 kolom, rating card 2 kolom+divider
+   ============================================================ */
+@media (max-width: 900px) {
+  .ptm-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .ptm-col {
+    width: 100%;
+    max-width: 100%;
+  }
+  .ptm-divider {
+    display: none;
+  }
+
+  .ptm-col-head--testimoni {
+    text-align: center;
+  }
+  .ptm-col-head--testimoni > div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .testimonials__mountain-icon {
+    display: block;
+    color: var(--color-red-500);
+    opacity: 0.6;
+    margin-bottom: 0.5rem;
+  }
+  .testimonials__subtitle {
+    font-size: 0.8rem;
+    color: var(--color-stone-600);
+    margin-top: 0.5rem;
+  }
+
+  .testimonials__rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.65rem;
+    background: var(--color-white);
+    border: 1px solid var(--color-stone-200);
+    border-radius: 16px;
+    padding: 1.1rem 0.75rem;
+    margin-top: 1.25rem;
+  }
+  .testimonials__rating-num {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--color-navy-900);
+  }
+  .testimonials__rating-stars-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .testimonials__stars {
+    color: #F5A623;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+  }
+  .testimonials__rating-sub {
+    display: block;
+    font-size: 0.62rem;
+    color: var(--color-stone-600);
+    margin-top: 0.1rem;
+    line-height: 1.3;
+  }
+  .testimonials__rating-divider {
+    display: block;
+    width: 1px;
+    align-self: stretch;
+    background: var(--color-stone-200);
+  }
+  .testimonials__rating-google {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+  }
+}
+
+/* ============================================================
+   CARA ORDER — foto dikecilin, steps ditumpuk, payment jadi slider
+   ============================================================ */
+@media (max-width: 900px) {
+  .cara-order__layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "head    photo"
+      "badges  photo"
+      "steps   steps"
+      "payment payment"
+      "infocard infocard"
+      "trust   trust";
+    column-gap: 0.75rem;
+    row-gap: 0.9rem;
+    align-items: start;
+  }
+  .cara-order__content {
+    display: contents; /* biar head/badges/steps/dst ikut jadi grid item langsung */
+  }
+
+  .cara-order__photo-col {
+    grid-area: photo;
+    display: flex;
+    align-items: center;
+  }
+  .cara-order__photo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  .cara-order__bubble {
+    display: none; /* referensi ganti ini jadi 4 badge terpisah -> lihat .cara-order__badges */
+  }
+
+  .cara-order__head {
+    grid-area: head;
+  }
+  .cara-order__head h2 {
+    font-size: 1.15rem;
+  }
+  .cara-order__head p {
+    font-size: 0.75rem;
+  }
+
+  .cara-order__badges {
+    grid-area: badges;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 0.4rem;
+  }
+  .cara-order__badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    width: 22%;
+  }
+  .cara-order__badge-icon {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid var(--color-red-500);
+    border-radius: 50%;
+    color: var(--color-red-500);
+  }
+  .cara-order__badge-icon svg {
+    width: 14px;
+    height: 14px;
+  }
+  .cara-order__badge-label {
+    font-size: 0.52rem;
+    font-weight: 700;
+    color: var(--color-red-500);
+    text-align: center;
+    line-height: 1.15;
+  }
+
+  .cara-order__steps {
+    grid-area: steps;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  .cara-order__step {
+    display: grid;
+    grid-template-columns: 44px 1fr 20px;
+    grid-template-areas:
+      "icon title chevron"
+      "icon desc chevron";
+    column-gap: 0.75rem;
+    row-gap: 0.15rem;
+    align-items: start;
+    background: var(--color-white);
+    border: 1px solid var(--color-stone-200);
+    border-radius: 14px;
+    padding: 0.85rem 0.9rem;
+  }
+  .cara-order__step-chevron {
+    display: flex;
+    grid-area: chevron;
+    align-self: center;
+    color: var(--color-stone-600);
+  }
+  .cara-order__step-icon-wrap {
+    grid-area: icon;
+    width: 44px;
+    height: 44px;
+  }
+  .cara-order__step-icon {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cara-order__step-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+  .cara-order__step h3 {
+    grid-area: title;
+    font-size: 0.88rem;
+    margin: 0;
+  }
+  .cara-order__step p {
+    grid-area: desc;
+    font-size: 0.74rem;
+    line-height: 1.4;
+    margin: 0;
+  }
+  .cara-order__arrow {
+    display: flex;
+    width: 44px;
+    height: 24px;
+    align-items: center;
+    justify-content: center;
+    margin: 0.15rem 0 0.15rem 0.9rem; /* 0.9rem = samain sama padding-left kartu, biar tetep sejajar sama icon */
+  }
+  .cara-order__arrow svg {
+    transform: rotate(90deg);
+  }
+
+  .cara-order__payment {
+    grid-area: payment;
+    margin-top: 0;
+  }
+  .cara-order__payment h4 {
+    font-size: 0.85rem;
+  }
+  .cara-order__payment-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 0.6rem;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 0.4rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .cara-order__payment-grid::-webkit-scrollbar { display: none; }
+  .cara-order__payment-item {
+    flex: 0 0 44%;
+    scroll-snap-align: start;
+    padding: 0.7rem 0.6rem;
+  }
+  .cara-order__payment-logo {
+    height: 18px;
+  }
+  .cara-order__payment-bank {
+    font-size: 0.75rem;
+  }
+  .cara-order__payment-name,
+  .cara-order__payment-number {
+    font-size: 0.62rem;
+  }
+
+  .cara-order__infocard {
+    grid-area: infocard;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+    margin-top: 0;
+    padding: 1rem;
+  }
+  .cara-order__infocard-divider {
+    display: none;
+  }
+  .cara-order__infocard-actions {
+    flex-direction: row;
+    gap: 0.6rem;
+    width: 100%;
+  }
+  .cara-order__infocard-actions .btn {
+    flex: 1;
+    justify-content: center;
+  }
+
+  .cara-order__trust {
+    grid-area: trust;
+    flex-wrap: wrap;
+    gap: 0.35rem 0.6rem;
+    font-size: 0.68rem;
+    margin-top: 0;
+  }
+}
+
+/* ============================================================
+   SIAPA KAMI — direstruktur: judul → 3 kartu fitur → foto besar+badge
+   ============================================================ */
+@media (max-width: 900px) {
+  .about__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about__intro-grid {
+    display: contents; /* biar content-col & image-col bisa di-order bareng features-row */
+  }
+
+  .about__intro-content-col {
+    order: 1;
+  }
+
+  .about__intro-text {
+    display: none; /* simplifikasi sesuai referensi: cuma judul yang tampil */
+  }
+
+  .about__features-row {
+    order: 3;
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .about__feature-card {
+    flex: 1;
+    padding: 0.6rem 0.35rem;
+    text-align: center;
+  }
+
+  .about__feature-icon {
+    width: 32px;
+    height: 32px;
+    margin-inline: auto;
+  }
+  .about__feature-icon svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .about__feature-title {
+    font-size: 0.7rem;
+    line-height: 1.25;
+    margin-top: 0.4rem;
+  }
+
+  .about__feature-desc {
+    display: none; /* referensi cuma nampilin judul kartu, bukan deskripsi panjang */
+  }
+
+  .about__intro-image-col {
+    order: 2;
+    display: block; /* dibalikin — sebelumnya di-hide total */
+    width: 100%;
+    max-width: 100%;
+    margin-top: 1.5rem;
+  }
+
+  .about__intro-images {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .about__intro-img-main {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+@media (max-width: 900px) {
+  .gm-history {
+    display: none;
+  }
+}

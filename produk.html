@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Katalog Produk CV. Gunung Mas 138" />
+  <title>Produk — CV. Gunung Mas 138</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/mobile-patch.css" />
+  <link rel="stylesheet" href="css/produk.css" />
+
+ <style>
+  .navbar { opacity: 1 !important; }
+</style>
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__brand">
+        <img src="assets/img/logo.jpeg" alt="Logo CV. Gunung Mas 138" class="navbar__logo" />
+        <span class="navbar__brand-text">CV. GUNUNG MAS <span>138</span></span>
+      </a>
+
+      <!-- TODO: revert ke shop.html atau path production sebelum deploy -->
+<nav class="navbar__links">
+  <a href="index.html" class="navbar__link">Beranda</a>
+  <a href="tentang.html" class="navbar__link">Tentang Kami</a>
+  <a href="produk.html" class="navbar__link navbar__link--active">Produk</a>
+  <a href="#" class="navbar__link navbar__link--soon" title="Segera hadir">Belanja</a>
+  <a href="karir.html" class="navbar__link">Karir</a>
+  <a href="kontak.html" class="navbar__link">Kontak</a>
+</nav>
+
+      <a href="kontak.html" class="btn btn-primary navbar__cta">
+        Hubungi Kami
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.3 2.6 3.4 4.7 6 6l2-2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.9c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.2 1l-2 2.3z" fill="currentColor"/></svg>
+      </a>
+
+      <button class="navbar__burger" id="navBurger" aria-label="Buka menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <nav class="navbar__mobile-panel" id="navMobilePanel">
+      <a href="index.html" class="navbar__mobile-link">Beranda</a>
+      <a href="tentang.html" class="navbar__mobile-link">Tentang Kami</a>
+      <a href="produk.html" class="navbar__mobile-link">Produk</a>
+      <a href="#" class="navbar__link navbar__link--soon" title="Segera hadir">Belanja</a>
+      <a href="karir.html" class="navbar__mobile-link">Karir</a>
+      <a href="kontak.html" class="navbar__mobile-link">Kontak</a>
+      <a href="kontak.html" class="btn btn-primary navbar__mobile-cta">Hubungi Kami</a>
+    </nav>
+  </header>
+
+  <div class="prod-page-wrap">
+    
+    <!-- ============ HERO PRODUK ============ -->
+    <section class="prod-hero" data-reveal-scroll>
+      <div class="prod-hero__content">
+        
+        <h1 class="prod-hero__title">Produk Lengkap, Kualitas <span class="text-accent">Terjaga.</span></h1>
+        <p class="prod-hero__desc">Kami menyediakan berbagai kebutuhan pokok dan bahan baku dari brand terpercaya untuk mendukung bisnis Anda setiap hari.</p>
+        
+        <div class="prod-stats">
+          <div class="prod-stat">
+            <div class="prod-stat__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M21 8l-9-5-9 5 9 5 9-5zM3 8v8l9 5 9-5V8M12 13v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="prod-stat__text"><h4>500+</h4><p>Jenis Produk</p></div>
+          </div>
+          <div class="prod-stat">
+            <div class="prod-stat__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="prod-stat__text"><h4>1000+</h4><p>SKU Tersedia</p></div>
+          </div>
+          <div class="prod-stat">
+            <div class="prod-stat__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="prod-stat__text"><h4>100%</h4><p>Produk Original</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="prod-hero__image">
+        <img src="assets/img/products/section.png" alt="Keranjang Produk CV Gunung Mas 138" />
+      </div>
+    </section>
+
+    <!-- ============ FILTER BAR ============ -->
+    <section class="prod-filter" data-reveal-scroll>
+      <img src="assets/img/products/prod-filter-tail.png" alt="" class="prod-filter__wave-img" aria-hidden="true" />
+
+      <div class="prod-filter__top">
+        <div class="prod-filter__brand">
+          <img src="assets/img/logo.jpeg" alt="Logo CV. Gunung Mas 138" class="prod-filter__brand-logo" />
+          <span class="prod-filter__brand-text">GUNUNG MAS<small>GROUP</small></span>
+        </div>
+        <div class="prod-search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="8" stroke="var(--color-navy-700)" stroke-width="2"/><path d="M21 21l-4.35-4.35" stroke="var(--color-navy-700)" stroke-width="2" stroke-linecap="round"/></svg>
+          <input type="text" id="prodSearchInput" placeholder="Cari produk..." />
+        </div>
+      </div>
+
+      <div class="prod-pills-wrap">
+        <div class="prod-pills" id="prodPills">
+          <button class="prod-pill is-active" data-brand="">SEMUA</button>
+        </div>
+        <button class="prod-pills__next" id="prodPillsNext" aria-label="Lihat brand lainnya">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <div class="prod-pills__scrollbar"><span id="prodPillsScrollThumb"></span></div>
+    </section>
+
+    <!-- ============ GRID PRODUK ============ -->
+    <section class="prod-items" data-reveal-scroll>
+      <div class="prod-catalog__head">
+        <h2 id="prodItemsTitle">Semua Produk</h2>
+        <p id="prodItemsCount">Memuat produk...</p>
+      </div>
+      <div class="prod-items-grid" id="prodItemsGrid">
+        <!-- kartu produk diisi otomatis oleh JS -->
+      </div>
+    </section>
+    <!-- ============ MENGAPA MEMILIH KAMI ============ -->
+    <section class="prod-why-us" data-reveal-scroll>
+      <div class="prod-why-us__head">
+        <h2>Mengapa Memilih Produk Kami?</h2>
+        <p>Komitmen kami untuk memberikan yang terbaik bagi pelanggan.</p>
+      </div>
+      
+      <div class="prod-why-grid">
+        <div class="prod-why-card">
+          <div class="prod-why-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="prod-why-text">
+            <h4>Kualitas Terjamin</h4>
+            <p>Produk 100% original dari distributor resmi dengan standar kualitas tinggi.</p>
+          </div>
+        </div>
+        
+        <div class="prod-why-card">
+          <div class="prod-why-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M21 8l-9-5-9 5 9 5 9-5zM3 8v8l9 5 9-5V8M12 13v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="prod-why-text">
+            <h4>Stok Selalu Tersedia</h4>
+            <p>Ketersediaan stok terjaga untuk memastikan kebutuhan bisnis Anda terpenuhi.</p>
+          </div>
+        </div>
+        
+        <div class="prod-why-card">
+          <div class="prod-why-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 16V6a1 1 0 011-1h9a1 1 0 011 1v10M3 16h11M14 8h3l2.7 3.4c.2.2.3.5.3.8V16h-1M14 16a2 2 0 104 0M6 16a2 2 0 104 0" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="prod-why-text">
+            <h4>Distribusi Cepat</h4>
+            <p>Pengiriman tepat waktu menggunakan armada kami sendiri.</p>
+          </div>
+        </div>
+        
+        <div class="prod-why-card">
+          <div class="prod-why-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="prod-why-text">
+            <h4>Harga Kompetitif</h4>
+            <p>Harga terbaik dengan kualitas terjamin untuk keuntungan bisnis Anda.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA STRIP ============ -->
+    <section class="cta-strip" style="margin-bottom: 2rem;" data-reveal-scroll>
+      <div class="container cta-strip__inner">
+        <div>
+          <span class="eyebrow eyebrow--light">◆ SIAP MEMENUHI KEBUTUHAN ANDA</span>
+          <h2>Butuh Produk Lain yang Tidak Terdaftar?</h2>
+          <p>Hubungi tim kami, kami siap memberikan rekomendasi dan solusi produk terbaik untuk bisnis Anda.</p>
+        </div>
+        <a href="kontak.html" class="btn btn-primary cta-strip__btn">
+          Hubungi Kami Sekarang
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.3 2.6 3.4 4.7 6 6l2-2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.9c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.2 1l-2 2.3z" fill="currentColor"/></svg>
+        </a>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <div class="footer__brand-row">
+          <img src="assets/img/logo.jpeg" alt="Logo CV. Gunung Mas 138" class="footer__logo" />
+          <span class="footer__brand-text">CV. GUNUNG MAS <span>138</span></span>
+        </div>
+        <p class="footer__desc">
+          Distributor kebutuhan pokok &amp; bahan baku, menyalurkan ke mitra
+          usaha dengan armada dan tim yang siap bergerak setiap hari.
+        </p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Navigasi</h4>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="tentang.html">Tentang Kami</a></li>
+          <li><a href="produk.html">Produk</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Kontak</h4>
+        <ul>
+          <li>Linggajaya, Kec. Mangkubumi, Kota Tasikmalaya</li>
+          <li>WA: 0896-1000-0138</li>
+          <li>gunungmas138@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span id="footerYear"></span> CV. Gunung Mas 138. Semua hak dilindungi.</span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="js/mobile-menu.js"></script>
+  <script src="js/produk-katalog.js"></script>
+  <script>
+    document.getElementById("footerYear").textContent = new Date().getFullYear();
+
+    // Reveal generik untuk semua [data-reveal-scroll] di halaman ini
+    (function () {
+      const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (prefersReducedMotion || typeof gsap === "undefined") {
+        document.querySelectorAll("[data-reveal-scroll]").forEach((el) => { el.style.opacity = 1; });
+        return;
+      }
+
+      document.querySelectorAll("[data-reveal-scroll]").forEach((el) => {
+        gsap.set(el, { opacity: 0, y: 26 });
+        const io = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            gsap.to(entry.target, { opacity: 1, y: 0, duration: 1.1, ease: "power3.out" });
+            io.unobserve(entry.target);
+          });
+        }, { threshold: 0.15 });
+        io.observe(el);
+      });
+    })();
+  </script>
+</body>
+</html>
