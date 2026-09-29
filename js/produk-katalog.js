@@ -13,7 +13,7 @@ console.log("SCRIPT PRODUK-KATALOG LOADED");
       const apiHost = hostname.replace(/-3000\./, "-4000.");
       return `${protocol}//${apiHost}/api`;
     }
-    return `${protocol}//${hostname}:4000/api`;
+        return "https://shop.gunungmas138.com/api";
   }
 
   const API_BASE = resolveApiBase();
