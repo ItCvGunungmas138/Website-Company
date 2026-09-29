@@ -1036,3 +1036,582 @@
     padding: 0 .75rem .75rem;
   }
 }
+
+
+/* ============================================================
+   FINAL MOBILE REVISION — KONTAK
+   ============================================================
+   Catatan:
+   - Desktop tidak diubah.
+   - Rule di bawah sengaja ditempatkan paling akhir agar
+     mengalahkan patch responsive lama di file ini.
+   - contact-main dipaksa terlihat di mobile agar tidak
+     tertahan oleh GSAP/data-reveal-scroll.
+   ============================================================ */
+
+
+/* =========================
+   TABLET / MOBILE <= 900px
+   ========================= */
+@media (max-width: 900px) {
+
+  /* HERO */
+  .contact-hero {
+    min-height: 390px;
+    margin: 1rem 1rem 0;
+    border-radius: 24px;
+    align-items: flex-end;
+    overflow: hidden;
+  }
+
+  .contact-hero__person {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .contact-hero__person::before {
+    display: none;
+  }
+
+  .contact-hero__person-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 68% 5%;
+    filter: none;
+  }
+
+  .contact-hero__content {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 7rem 1.5rem 1.5rem;
+    margin-top: 0;
+
+    background:
+      linear-gradient(
+        180deg,
+        rgba(18,23,58,0) 0%,
+        rgba(18,23,58,.42) 35%,
+        rgba(18,23,58,.88) 78%,
+        rgba(18,23,58,.96) 100%
+      );
+  }
+
+  .contact-hero__content h1 {
+    font-size: clamp(1.65rem, 7vw, 2.15rem);
+    line-height: 1.12;
+    margin-bottom: .8rem;
+  }
+
+  .contact-hero__content p {
+    display: block;
+    max-width: 100%;
+    font-size: .82rem;
+    line-height: 1.65;
+    margin-bottom: 1rem;
+  }
+
+  .contact-hero__badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem .9rem;
+  }
+
+  .contact-hero__badges span {
+    font-size: .68rem;
+    gap: .4rem;
+  }
+
+
+  /* CONTACT MAIN
+     Penting: tidak ada padding besar di sini. */
+  .contact-main {
+    width: auto !important;
+    margin: 1.25rem 1rem 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+
+    /* Mencegah section tetap invisible akibat reveal animation */
+    opacity: 1 !important;
+    transform: none !important;
+    visibility: visible !important;
+  }
+
+  .contact-main__grid {
+    width: 100% !important;
+    max-width: none !important;
+
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+
+    gap: 1.15rem !important;
+    margin: 0 !important;
+  }
+
+
+  /* CONTACT CARD */
+  .contact-card {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1.25rem;
+    border-radius: 20px;
+  }
+
+  .contact-card h2 {
+    font-size: 1.15rem;
+    line-height: 1.25;
+  }
+
+  .contact-underline {
+    margin: .65rem 0 1rem;
+  }
+
+
+  /* INFORMASI KONTAK */
+  .contact-item {
+    display: flex;
+    align-items: flex-start;
+
+    min-height: 0;
+    padding: .85rem;
+    margin-bottom: .7rem;
+    gap: .75rem;
+    border-radius: 15px;
+  }
+
+  .contact-item__icon {
+    width: 44px;
+    height: 44px;
+    flex: 0 0 44px;
+    border-radius: 13px;
+  }
+
+  .contact-item h4 {
+    font-size: .82rem;
+    margin-bottom: .2rem;
+  }
+
+  .contact-item p {
+    font-size: .72rem;
+    line-height: 1.5;
+  }
+
+  .contact-item__social {
+    gap: .45rem;
+  }
+
+  .contact-item__social a {
+    width: 30px;
+    height: 30px;
+  }
+
+
+  /* CTA BANTUAN CEPAT */
+  .contact-card__cta {
+    display: grid;
+    grid-template-columns: 44px minmax(0, 1fr);
+    column-gap: .75rem;
+    row-gap: .65rem;
+
+    margin-top: 1.1rem;
+    padding-top: 1.1rem;
+  }
+
+  .contact-cta__icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .contact-cta__text {
+    min-width: 0;
+  }
+
+  .contact-cta__text h4 {
+    font-size: .9rem;
+    line-height: 1.3;
+  }
+
+  .contact-cta__text p {
+    max-width: none;
+    font-size: .72rem;
+    line-height: 1.5;
+  }
+
+  .contact-cta__actions {
+    grid-column: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    gap: .5rem;
+    min-width: 0;
+  }
+
+  .contact-cta__phone span {
+    font-size: .8rem;
+  }
+
+  .contact-cta__phone small {
+    font-size: .62rem;
+  }
+
+  .contact-cta__wa {
+    font-size: .72rem;
+    padding: .55rem .85rem;
+  }
+
+
+  /* FORM */
+  .contact-form {
+    width: 100%;
+    gap: .8rem;
+  }
+
+  .contact-form-desc {
+    font-size: .76rem;
+    line-height: 1.55;
+    margin-bottom: .25rem;
+  }
+
+  .contact-form__row {
+    grid-template-columns: 1fr !important;
+    gap: .8rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form select {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: .82rem;
+  }
+
+  .contact-form input,
+  .contact-form select {
+    min-height: 46px;
+  }
+
+  .contact-form textarea {
+    min-height: 110px;
+  }
+
+  .contact-form__submit {
+    width: 100%;
+    min-height: 48px;
+  }
+
+  .contact-form__privacy {
+    font-size: .68rem;
+    line-height: 1.5;
+  }
+
+
+  /* FAQ */
+  .faq-section {
+    width: auto;
+    margin: 1.15rem 1rem 0;
+    padding: 1.15rem;
+    border-radius: 20px;
+  }
+
+  .faq-section__header {
+    margin-bottom: 1rem;
+  }
+
+  .faq-section__title-wrap {
+    gap: .7rem;
+  }
+
+  .faq-section__icon {
+    width: 42px;
+    height: 42px;
+    flex: 0 0 42px;
+    border-radius: 13px;
+  }
+
+  .faq-section__header h2 {
+    font-size: 1.25rem;
+  }
+
+  .faq-section__header p {
+    font-size: .74rem;
+    line-height: 1.55;
+  }
+
+  .faq-section__grid {
+    grid-template-columns: 1fr;
+    gap: .8rem;
+  }
+
+  .faq-category {
+    padding: .9rem;
+    border-radius: 16px;
+  }
+
+  .faq-category__head {
+    gap: .65rem;
+    margin-bottom: .8rem;
+  }
+
+  .faq-category__icon {
+    width: 40px;
+    height: 40px;
+    flex: 0 0 40px;
+    border-radius: 12px;
+  }
+
+  .faq-category h3 {
+    font-size: .92rem;
+  }
+
+  .faq-category__head p {
+    font-size: .7rem;
+  }
+
+  .faq-list {
+    gap: .5rem;
+  }
+
+  .faq-item summary {
+    padding: .72rem .75rem;
+    font-size: .7rem;
+    line-height: 1.4;
+  }
+
+  .faq-item__answer {
+    padding: 0 .75rem .75rem;
+    font-size: .7rem;
+    line-height: 1.6;
+  }
+}
+
+
+/* =========================
+   SMALL PHONE <= 560px
+   ========================= */
+@media (max-width: 560px) {
+
+  .contact-hero {
+    min-height: 430px;
+    margin-top: 1rem;
+    margin-inline: .75rem;
+    border-radius: 21px;
+  }
+
+  .contact-hero__content {
+    padding: 6.5rem 1.1rem 1.25rem;
+  }
+
+  .contact-hero__content h1 {
+    font-size: clamp(1.45rem, 8vw, 1.8rem);
+    margin-bottom: .7rem;
+  }
+
+  .contact-hero__content p {
+    font-size: .76rem;
+    line-height: 1.6;
+  }
+
+  .contact-hero__badges {
+    gap: .45rem .75rem;
+  }
+
+  .contact-hero__badges span {
+    font-size: .62rem;
+  }
+
+
+  .contact-main {
+    margin: 1rem .75rem 0 !important;
+    padding: 0 !important;
+  }
+
+  .contact-main__grid {
+    gap: 1rem !important;
+  }
+
+
+  .contact-card {
+    padding: 1.1rem;
+    border-radius: 18px;
+  }
+
+  .contact-card h2 {
+    font-size: 1.05rem;
+  }
+
+
+  .contact-item {
+    padding: .75rem;
+    gap: .65rem;
+    border-radius: 14px;
+  }
+
+  .contact-item__icon {
+    width: 42px;
+    height: 42px;
+    flex-basis: 42px;
+    border-radius: 12px;
+  }
+
+  .contact-item h4 {
+    font-size: .78rem;
+  }
+
+  .contact-item p {
+    font-size: .68rem;
+    line-height: 1.5;
+  }
+
+
+  .contact-card__cta {
+    grid-template-columns: 42px minmax(0, 1fr);
+    column-gap: .65rem;
+    row-gap: .55rem;
+
+    margin-top: 1rem;
+    padding-top: 1rem;
+  }
+
+  .contact-cta__icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .contact-cta__text h4 {
+    font-size: .84rem;
+  }
+
+  .contact-cta__text p {
+    font-size: .68rem;
+  }
+
+  .contact-cta__actions {
+    gap: .45rem;
+  }
+
+  .contact-cta__phone span {
+    font-size: .76rem;
+  }
+
+  .contact-cta__wa {
+    font-size: .68rem;
+    padding: .5rem .75rem;
+  }
+
+
+  .contact-form-desc {
+    font-size: .72rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form select {
+    font-size: .78rem;
+  }
+
+  .contact-form textarea {
+    min-height: 105px;
+  }
+
+
+  .faq-section {
+    margin-inline: .75rem;
+    padding: 1rem;
+    border-radius: 18px;
+  }
+
+  .faq-section__title-wrap {
+    gap: .6rem;
+  }
+
+  .faq-section__icon {
+    width: 40px;
+    height: 40px;
+    flex-basis: 40px;
+  }
+
+  .faq-section__header h2 {
+    font-size: 1.15rem;
+  }
+
+  .faq-section__header p {
+    font-size: .7rem;
+  }
+
+  .faq-category {
+    padding: .8rem;
+    border-radius: 15px;
+  }
+
+  .faq-category__icon {
+    width: 38px;
+    height: 38px;
+    flex-basis: 38px;
+  }
+
+  .faq-category h3 {
+    font-size: .88rem;
+  }
+
+  .faq-category__head p {
+    font-size: .67rem;
+  }
+
+  .faq-item summary {
+    font-size: .67rem;
+    padding: .68rem .7rem;
+  }
+
+  .faq-item__answer {
+    font-size: .67rem;
+    padding: 0 .7rem .7rem;
+  }
+}
+
+
+/* =========================
+   VERY SMALL PHONE <= 400px
+   ========================= */
+@media (max-width: 400px) {
+
+  .contact-hero {
+    min-height: 410px;
+  }
+
+  .contact-hero__content {
+    padding-inline: 1rem;
+  }
+
+  .contact-hero__badges {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .45rem;
+  }
+
+  .contact-hero__badges span {
+    white-space: normal;
+  }
+
+  .contact-card {
+    padding: 1rem;
+  }
+
+  .contact-item {
+    padding: .7rem;
+  }
+
+  .contact-item__icon {
+    width: 40px;
+    height: 40px;
+    flex-basis: 40px;
+  }
+}
