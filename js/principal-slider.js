@@ -22,7 +22,6 @@ const principalBrands = [
   { name: "Bumboo", logo: "assets/img/principals/bumboo.jpeg" },
   { name: "Mypets", logo: "assets/img/principals/mypets.jpeg" },
   { name: "PCG", logo: "assets/img/principals/pcg.jpeg" },
-  { name: "Mamaya", logo: "assets/img/principals/mamaya.jpeg" },
   // Tambah brand baru di sini
 ];
 

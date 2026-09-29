@@ -39,25 +39,7 @@ console.log("SCRIPT PRODUK-KATALOG LOADED");
     return `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`;
   }
 
-  async function shareProduct(product) {
-    const msg = `Halo, saya mau tanya harga & stok untuk produk: ${product.name}`;
-    const imgUrl = imageOrPlaceholder(product.image_path);
-
-    if (navigator.share && imgUrl) {
-      try {
-        const response = await fetch(imgUrl);
-        const blob = await response.blob();
-        const file = new File([blob], "produk.jpg", { type: blob.type });
-
-        if (navigator.canShare && navigator.canShare({ files: [file] })) {
-          await navigator.share({ text: msg, files: [file] });
-          return;
-        }
-      } catch (err) {
-        console.log("Share dengan foto gagal, fallback ke link biasa:", err);
-      }
-    }
-
+  function bukaWA(product) {
     window.open(waTextLink(product.name), "_blank");
   }
 
@@ -131,7 +113,7 @@ console.log("SCRIPT PRODUK-KATALOG LOADED");
     const btn = e.target.closest(".prod-item-card__wa");
     if (!btn) return;
     const product = allProducts.find((p) => String(p.id) === btn.dataset.productId);
-    if (product) shareProduct(product);
+    if (product) bukaWA(product);
   });
 
   function setActiveCategory(category) {
