@@ -5,7 +5,7 @@
    ngelink ke produk.html dengan filter brand aktif.
    ============================================================ */
 (function () {
-  const API_BASE = "http://localhost:4000/api";
+  const API_BASE = "https://shop.gunungmas138.com/api";
   const PREVIEW_COUNT = 5;
 
   let allProducts = [];

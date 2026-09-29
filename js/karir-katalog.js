@@ -1,5 +1,5 @@
 (function () {
-  const API_BASE = "http://localhost:4000/api";
+  const API_BASE = "https://shop.gunungmas138.com/api";
   const GFORM_URL = "https://s.id/LokerCVGunungMas138";
   const grid = document.getElementById("karirGrid");
   if (!grid) return;
